@@ -36,5 +36,7 @@ From your SSH terminal window, bring all software on the Raspberry Pi fully up-t
 1. Ensure your Raspberry Pi has a working internet connection.
 1. (Optional) Set your correct timezone under "Localisation" in the `raspi-config` graphical configuration tool.
 1. Bring your Raspberry Pi OS up-to-date:
-    `sudo apt -y update`
-    `sudo apt -y upgrade` (plan for about fifteen minutes of downloading and installing software upgrades)
+
+    a. `sudo apt -y update`
+
+    b. `sudo apt -y upgrade` (plan for about fifteen minutes of downloading and installing software upgrades)
