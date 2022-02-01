@@ -34,7 +34,7 @@ You will insert the microSD card you just flashed with Raspberry Pi OS Lite, boo
 From your SSH terminal window, bring all software on the Raspberry Pi fully up-to-date. This is best practice before installing required dependencies. Here's how:
 
 1. Ensure your Raspberry Pi has a working internet connection.
-1. (Optional) Set your correct timezone under "Localisation" in the `raspi-config` graphical configuration tool.
+1. (Optional) Set your correct timezone. Do this by typing `raspi-config` to open a graphical configuration tool, and then set the timezone under the menu item named "Localisation".
 1. Bring your Raspberry Pi OS up-to-date:
 
     a. `sudo apt -y update`
