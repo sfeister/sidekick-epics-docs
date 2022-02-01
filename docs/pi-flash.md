@@ -1,4 +1,4 @@
-## Install and configure Raspberry Pi OS Lite on your microSD card (10 minutes)
+# Install and configure Raspberry Pi OS Lite on your microSD card (10 minutes)
 In this tutorial, you will flash Raspberry Pi OS Lite on your microSD card in such a way that you can remotely connect to the machine via SSH.
 
 ## Why Pi OS Lite?
