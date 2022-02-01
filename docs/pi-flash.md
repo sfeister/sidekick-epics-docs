@@ -1,6 +1,9 @@
 ## Install and configure Raspberry Pi OS Lite on your microSD card (10 minutes)
 In this tutorial, you will flash Raspberry Pi OS Lite on your microSD card in such a way that you can remotely connect to the machine via SSH.
 
+## Why Pi OS Lite?
+We chose Raspberry Pi OS Lite because it has lower installation size than the Raspberry Pi OS. Since we won't be using any of the Desktop elements of our Raspberry Pi, but will be connecting remotely, we don't need the "extras". This makes it a nice, clean foundation for our EPICS goals.
+
 ## Materials
 * Raspberry Pi (e.g. this [Raspberry Pi Model 3 B+](https://www.raspberrypi.com/products/raspberry-pi-3-model-b-plus/))
 * Blank MicroSD card (e.g. this [16 GB SanDisk microSD card](https://www.amazon.com/SanDisk-Ultra-SDSQUNS-016G-GN3MN-UHS-I-microSDHC/dp/B074B4P7KD/ref=sr_1_4?dchild=1&keywords=micro+sd+card+16gb&qid=1634232331&s=electronics&sr=1-4)
