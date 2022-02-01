@@ -28,7 +28,7 @@ You will insert the microSD card you just flashed with Raspberry Pi OS Lite, boo
 1. Using your preferred SSH tool, such as [PuTTY](https://www.putty.org/) on Windows, connect with your Raspberry Pi. The username is pi, and the password is as you set in the Raspberry Pi OS Imager settings above.
     1. If you are entirely new to SSH, you may want to follow this tutorial: [How to Connect to an SSH Server from Windows, macOS, or Linux](https://www.howtogeek.com/311287/how-to-connect-to-an-ssh-server-from-windows-macos-or-linux/)
     1. For example, in Linux, you might run: `ssh pi@192.168.202.200`, if your Pi's IP address that you found in the last step were 192.168.202.200. Then, when prompted, you would put in your password that you set in the Raspberry Pi OS Imager step above.
-1. If your terminal window displays a prompt that begins with `pi\@epics1$`, you are now successfully in a Linux shell running on the Raspberry Pi. You will use this remote shell to modify your Raspberry Pi and install EPICS.
+1. If your terminal window displays a prompt that begins with `pi@epics1$`, you are now successfully in a Linux shell running on the Raspberry Pi. You will use this remote shell to modify your Raspberry Pi and install EPICS.
 
 ### Bring the OS fully up-to-date (15 minutes)
 From your SSH terminal window, bring all software on the Raspberry Pi fully up-to-date. This is best practice before installing required dependencies. Here's how:
