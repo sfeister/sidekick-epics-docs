@@ -1,6 +1,9 @@
 # First boot and SSH into your Raspberry Pi (35 minutes)
 You will insert the microSD card you just flashed with Raspberry Pi OS Lite, boot it, SSH into it, and bring it fully up-to-date.
 
+## References
+1. [How to Connect to an SSH Server from Windows, macOS, or Linux](https://www.howtogeek.com/311287/how-to-connect-to-an-ssh-server-from-windows-macos-or-linux/)
+
 ## Pre-requisites
 * Completion of the tutorial in which you flashed your microSD card for your Raspberry Pi.
 * Familiarity with the method of [SSH remote connection to networked computers](https://www.startutorial.com/articles/view/ssh-basics-part-1-introduction)
