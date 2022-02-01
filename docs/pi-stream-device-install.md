@@ -1,4 +1,4 @@
-# Build and Install StreamDevice on Raspberry Pi (70 minutes)
+# Build and Install StreamDevice on Raspberry Pi (50 minutes)
 By following these instructions, you will build and install StreamDevice, a supplemental package for EPICS. 
 
 StreamDevice will facilitate your serial communication with Ethernet devices and USB devices (such as an Arduino).
