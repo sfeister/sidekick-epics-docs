@@ -6,10 +6,6 @@ EPICS 7 provides the base infrastructure for EPICS, upon which further EPICS pac
 ## References
 1. [EPICS 7 getting started guide](https://docs.epics-controls.org/projects/how-tos/en/latest/getting-started/installation.html)
 
-## References
-1. [EPICS 7 getting started guide](https://docs.epics-controls.org/projects/how-tos/en/latest/getting-started/installation.html)
-1. [StreamDevice setup guide](https://paulscherrerinstitute.github.io/StreamDevice/setup.html)
-
 ## Pre-requisites
 * EPICS v7 is already installed on your Raspberry Pi, per prior instructions
 * Capability to SSH into your Raspberry Pi
