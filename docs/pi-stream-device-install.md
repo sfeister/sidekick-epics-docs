@@ -129,5 +129,5 @@ Follow the prior instructions to SSH into your Raspberry Pi from your Laptop / C
         PCRE_INCLUDE=/usr/include
         PCRE_LIB=/usr/lib
         ```
-1. Run `make`.
+1. Run `make` (or `make -j4` for faster results).
     
