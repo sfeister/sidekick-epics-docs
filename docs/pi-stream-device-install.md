@@ -28,9 +28,9 @@ Follow the prior instructions to SSH into your Raspberry Pi from your Laptop / C
 1. Install PCRE packages
     1. `sudo apt install -y libpcre3 libpcre3-dev`
         1. Note: libpcre3 (runtime files) is probably already installed, but libpcre3-dev (include files, etc) is probably not.
-    1. (Optional) Check that "/usr/include/" now contains header files for PCRE, such as "pcre.h", and that "/usr/lib/x86_64-linux-gnu/" now contains files such as "libpcre.so"
-        1. Go check out package details for libpcre3 and libpcre3-dev and see where items went (see references for package lists, then go to "list files" under your architecture)
-        1. Or call two functions:
+    1. (Optional) Check that "/usr/include/" now contains header files for PCRE, such as "pcre.h", and that "/usr/lib/x86_64-linux-gnu/" now contains files such as "libpcre.so". You can do this in at least two ways:
+        1. Option A: Go check out package details for libpcre3 and libpcre3-dev and see where items went (see references for package lists, then go to "list files" under your architecture)
+        1. Option B: Call these two commands:
             1. `whereis pcre`, which returns for my system: `pcre: /usr/include/pcre.h /usr/share/man/man3/pcre.3.gz`
             1. `whereis libpcre` which returns for my system: `libpcre: /usr/lib/arm-linux-gnueabihf/libpcre.a /usr/lib/arm-linux-gnueabihf/libpcre32.so /usr/lib/arm-linux-gnueabihf/libpcre.so /usr/lib/arm-linux-gnueabihf/libpcre32.a /usr/lib/arm-linux-gnueabihf/libpcre16.a /usr/lib/arm-linux-gnueabihf/libpcre16.so`
 1. Compile and install asynDriver module, which is a pre-requisite for stream
@@ -72,6 +72,7 @@ Follow the prior instructions to SSH into your Raspberry Pi from your Laptop / C
                 -include $(TOP)/configure/RELEASE.local
                 ```
             1. `make` (took me about five minutes)
+
 #### Compile and install StreamDevice
 1. Compile and install StreamDevice module
     1. Navigate back into the directory you made to hold EPICS support items.
