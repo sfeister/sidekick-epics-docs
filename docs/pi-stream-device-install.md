@@ -123,7 +123,7 @@ Follow the prior instructions to SSH into your Raspberry Pi from your Laptop / C
             -include $(TOP)/configure/RELEASE.local
             ```
 1. Set up the architecture-specific RELEASE file, so that it locates the pcre libraries you installed earlier:
-    1. `nano configure/RELEASE.Common.${EPICS_HOST_ARCH}`
+    1. `nano configure/RELEASE.Common.${EPICS_HOST_ARCH}` (This will create a new file to edit)
         1. Based on examining the outputs of `whereis pcre` and `whereis libpcre` (see the earlier step where we were installing the PCRE dependency), we give this new file contents that match the path prefixes for our system:
         ```bash
         PCRE_INCLUDE=/usr/include
