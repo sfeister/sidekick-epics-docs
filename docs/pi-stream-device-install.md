@@ -26,37 +26,26 @@ Follow the prior instructions to SSH into your Raspberry Pi from your Laptop / C
 
 #### Install dependencies for StreamDevice (10 minutes)
 1. Install PCRE packages
-
-    a. `sudo apt install -y libpcre3 libpcre3-dev`
-        
-        i. Note: libpcre3 (runtime files) is probably already installed, but libpcre3-dev (include files, etc) is probably not.
-        
-    b. (Optional) Check that "/usr/include/" now contains header files for PCRE, such as "pcre.h", and that "/usr/lib/x86_64-linux-gnu/" now contains files such as "libpcre.so"
-        
-        i. Go check out package details for libpcre3 and libpcre3-dev and see where items went (see references for package lists, then go to "list files" under your architecture)
-        
-        ii. Or:
-        
-          1) `whereis pcre`
-          
-              a) Returns: `pcre: /usr/include/pcre.h /usr/share/man/man3/pcre.3.gz`
-          
-          2) `whereis libpcre`
-             
-              a) Returns: `libpcre: /usr/lib/arm-linux-gnueabihf/libpcre.a /usr/lib/arm-linux-gnueabihf/libpcre32.so /usr/lib/arm-linux-gnueabihf/libpcre.so /usr/lib/arm-linux-gnueabihf/libpcre32.a /usr/lib/arm-linux-gnueabihf/libpcre16.a /usr/lib/arm-linux-gnueabihf/libpcre16.so`
+    1. `sudo apt install -y libpcre3 libpcre3-dev`
+        1. Note: libpcre3 (runtime files) is probably already installed, but libpcre3-dev (include files, etc) is probably not.
+    1. (Optional) Check that "/usr/include/" now contains header files for PCRE, such as "pcre.h", and that "/usr/lib/x86_64-linux-gnu/" now contains files such as "libpcre.so"
+        1. Go check out package details for libpcre3 and libpcre3-dev and see where items went (see references for package lists, then go to "list files" under your architecture)
+        1. Or call two functions:
+            1. `whereis pcre`, which returns for my system: `pcre: /usr/include/pcre.h /usr/share/man/man3/pcre.3.gz`
+            1. `whereis libpcre` which returns for my system: `libpcre: /usr/lib/arm-linux-gnueabihf/libpcre.a /usr/lib/arm-linux-gnueabihf/libpcre32.so /usr/lib/arm-linux-gnueabihf/libpcre.so /usr/lib/arm-linux-gnueabihf/libpcre32.a /usr/lib/arm-linux-gnueabihf/libpcre16.a /usr/lib/arm-linux-gnueabihf/libpcre16.so`
 1. Compile and install asynDriver module, which is a pre-requisite for stream
-    a. Navigate into the directory you made to hold EPICS items, into which you cloned the epics-base repository, and create a new folder to hold support items for EPICS base (e.g. additional modules).
-        i. `cd $HOME/EPICS`
-        ii. `mkdir support`
-        iii. `cd support`
-    b. Download asynDriver module source code and navigate into the folder
-        i. `git clone https://github.com/epics-modules/asyn.git`
-        ii. `cd asyn`
-    c. Set up the RELEASE file
-        i. `nano configure/RELEASE`
-            1) Comment out unneeded lines IPAC, SEQ, CALC, SSCAN, etc.
-            2) Set the SUPPORT and EPICS_BASE variables to point to the right folders for your computer
-            3) E.g. make the file look like this:
+    1. Navigate into the directory you made to hold EPICS items, into which you cloned the epics-base repository, and create a new folder to hold support items for EPICS base (e.g. additional modules).
+        1. `cd $HOME/EPICS`
+        1. `mkdir support`
+        1. `cd support`
+    1. Download asynDriver module source code and navigate into the folder
+        1. `git clone https://github.com/epics-modules/asyn.git`
+        1. `cd asyn`
+    1. Set up the RELEASE file
+        1. `nano configure/RELEASE`
+            1. Comment out unneeded lines IPAC, SEQ, CALC, SSCAN, etc.
+            2. Set the SUPPORT and EPICS_BASE variables to point to the right folders for your computer
+            3. E.g. make the file look like this:
                 ```
                 #RELEASE Location of external products
                 
@@ -82,20 +71,20 @@ Follow the prior instructions to SSH into your Raspberry Pi from your Laptop / C
                 -include $(TOP)/../RELEASE.$(EPICS_HOST_ARCH).local
                 -include $(TOP)/configure/RELEASE.local
                 ```
-            4) `make` (took me about five minutes)
+            1. `make` (took me about five minutes)
 #### Compile and install StreamDevice
 1. Compile and install StreamDevice module
-    a. Navigate back into the directory you made to hold EPICS support items.
-        i. `cd $HOME/EPICS/support`
-    b. Download StreamDevice module source code and navigate into the folder
-        i. `git clone https://github.com/paulscherrerinstitute/StreamDevice.git`
-        i. `cd StreamDevice` 
-    c. Set up the RELEASE file
-        i. `nano configure/RELEASE`
-            1) Fix the "ASYN" line to match your actual file path from above: `ASYN=$(SUPPORT)/asyn`
-            1) Comment out the "CALC" and "PCRE" lines
-            2) Set the EPICS_BASE variable to point to the right folder for your computer (SUPPORT is already set up OK)
-            3) E.g. make the file look like this:
+    1. Navigate back into the directory you made to hold EPICS support items.
+        1. `cd $HOME/EPICS/support`
+    1. Download StreamDevice module source code and navigate into the folder
+        1. `git clone https://github.com/paulscherrerinstitute/StreamDevice.git`
+        1. `cd StreamDevice` 
+    1. Set up the RELEASE file
+        1. `nano configure/RELEASE`
+            1. Fix the "ASYN" line to match your actual file path from above: `ASYN=$(SUPPORT)/asyn`
+            1. Comment out the "CALC" and "PCRE" lines
+            1. Set the EPICS_BASE variable to point to the right folder for your computer (SUPPORT is already set up OK)
+            1. E.g. make the file look like this:
                 ```
                 #RELEASE Location of external products
                 # Run "gnumake clean uninstall install" in the application
@@ -129,12 +118,12 @@ Follow the prior instructions to SSH into your Raspberry Pi from your Laptop / C
                 -include $(TOP)/../RELEASE.$(EPICS_HOST_ARCH).local
                 -include $(TOP)/configure/RELEASE.local
                 ```
-    a. Set up the architecture-specific RELEASE file, so that it locates the pcre libraries you installed earlier:
-        i. `nano configure/RELEASE.Common.${EPICS_HOST_ARCH}`
-            i. Based on the outputs of `whereis pcre` and `whereis libpcre`, we give this new file these contents:
+    1. Set up the architecture-specific RELEASE file, so that it locates the pcre libraries you installed earlier:
+        1. `nano configure/RELEASE.Common.${EPICS_HOST_ARCH}`
+            1. Based on the outputs of `whereis pcre` and `whereis libpcre`, we give this new file these contents:
             ```
             PCRE_INCLUDE=/usr/include
             PCRE_LIB=/usr/lib
             ```
-    a. Run `make`.
+    1. Run `make`.
     
