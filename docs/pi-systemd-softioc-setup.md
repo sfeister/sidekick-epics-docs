@@ -95,3 +95,5 @@ When prompted as above, press enter to proceed (we don't want to remove it.)
 
 The installation will finish with `Done.`.
 
+### Check your installation
+Type `manage-iocs` to check your installation. A list of possible commands will appear, indicating success.
