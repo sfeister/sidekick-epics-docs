@@ -86,3 +86,12 @@ Make sure you've finished following all steps above for creating your new `softi
 sudo ./install.sh
 ```
 The install script will check for the `softioc` user and avoid re-creating it. Note that the configuration would try to create the `softioc` user if you hadn't already -- but I prefer the steps I've shown above for the purpose of usability.
+
+During installation, you may be prompted with the message:
+```
+procServ is already installed in /usr/bin. Do you want to remove it and install a new one? Type 'yes' if you do.
+```
+When prompted as above, press enter to proceed (we don't want to remove it.)
+
+The installation will finish with `Done.`.
+
