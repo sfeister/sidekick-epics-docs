@@ -3,7 +3,7 @@ You will download and perform first setup of an IOC management tool called "syst
 
 This tool enables easy management of multiple IOCs across multiple computers. It also allows the IOC to start automatically on system boot.
 
-At the end of this tutorial, you will be able to call `manage-iocs` from your bash terminal.
+At the end of this tutorial, you will have created a systemwide folder for IOCs, and be able to call `manage-iocs` from your bash terminal.
 
 ## Background
 Systemd-iocs is developed by Hu Yong of the the National Synchrotron Light Source II. It was recommended to me by the developer in the EPICS user forums. Other alternatives for remote management of IOCs, also suggested in the forum included tools like `tmux` and `procServ`.
