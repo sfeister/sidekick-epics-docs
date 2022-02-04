@@ -27,11 +27,11 @@ sudo mkdir -p /epics/iocs
 ```
 
 ### Create new user to manage IOCs
-Note! Even though you are about to create a new user in your Linux instance, *stay logged in as your main user, `pi`, for all of the steps in this guide.*
+Note! **Stay logged in as your main user, `pi`, for all of the steps in this guide.**
 
-#### Create the user `softioc`
+#### Create the new user
 
-Create a new user called `softioc`. This user will be utilized by systemd-softioc, to run your software-based IOCs.
+Create a new user called `softioc`. This user will be utilized by systemd-softioc, to run your software-based IOCs. The systemd-ioc setup script will look for the username `softioc`, so make sure you use that name.
 
 ```bash
 sudo useradd -m softioc
@@ -74,8 +74,15 @@ sudo apt install procserv telnet
 ```
 
 ### Install systemd-softioc
-In any folder of your choice, download the systemd-softioc package.
+In any folder of your choice, download the systemd-softioc package. Then, navigate into the folder you just downloaded.
 
 ```bash
 git clone https://github.com/NSLS-II/systemd-softioc
+cd systemd-softioc
 ```
+
+Make sure you've finished following all steps above for creating your new `softioc` user before proceeding to installation.
+```bash
+sudo ./install.sh
+```
+The install script will check for the `softioc` user and avoid re-creating it. Note that the configuration would try to create the `softioc` user if you hadn't already -- but I prefer the steps I've shown above for the purpose of usability.
