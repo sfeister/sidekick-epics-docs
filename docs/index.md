@@ -5,3 +5,4 @@
 2. [First Boot](pi-first-boot.md)
 3. [Install EPICS v7](pi-epics-install.md)
 4. [Install StreamDevice](pi-stream-device-install.md)
+5. [Install and Configure systemd-ioc](pi-systemd-ioc-setup.md)
