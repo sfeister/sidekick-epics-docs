@@ -1,4 +1,4 @@
-# First setup of systemd-ioc
+# Install and Configure systemd-ioc
 You will download and perform first setup of an IOC management tool called "systemd-ioc".
 
 This tool enables easy management of multiple IOCs across multiple computers. It also allows the IOC to start automatically on system boot.
@@ -97,3 +97,6 @@ The installation will finish with `Done.`.
 
 ### Check your installation
 Type `manage-iocs` to check your installation. A list of possible commands will appear, indicating success.
+
+### Next Steps
+In the next tutorial, I will show you how to create an IOC folder within /epics/iocs and configure it for IOC startup using `manage-iocs`.
