@@ -74,14 +74,14 @@ sudo apt install procserv telnet
 ```
 
 ### Install systemd-softioc
-In any folder of your choice, download the systemd-softioc package. Then, navigate into the folder you just downloaded.
+In any folder of your choice, download the latest source code of systemd-softioc from GitHub.
 
 ```bash
 git clone https://github.com/NSLS-II/systemd-softioc
 cd systemd-softioc
 ```
 
-Make sure you've finished following all steps above for creating your new `softioc` user before proceeding to installation.
+Make sure you've finished following all steps above for creating your new `softioc` user before proceeding to installation from within the source code directory.
 ```bash
 sudo ./install.sh
 ```
