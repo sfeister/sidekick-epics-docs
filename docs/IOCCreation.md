@@ -1,4 +1,4 @@
-Creating an IOC in EPICS (CentOS)
+# Creating an IOC in EPICS (CentOS)
 
 Used the following resource: https://docs.epics-controls.org/projects/how-tos/en/latest/getting-started/installation.html
 
