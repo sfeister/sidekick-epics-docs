@@ -34,7 +34,7 @@ All components work together thanks to EPICS, which runs on all the computers in
 
 #### Trigger Signals for Lasers and Diagnostics
 
-In a real laser system, trigger cables run from a pulse generator (or several) out to all elements of the laser system and the experimental diagnostics. Each trigger line must have independent timing control.
+In high-intensity laser laboratories, trigger cables fan out from a pulse generator (or several pulse generators) to all elements of the laser system and the experimental diagnostics. Correct trigger timing is essential for everything from flashing the laser diodes to opening the electronic shutter of a detector. Many of these system elements require independent timing signals; for example, we want the laser amplifier delay to be different from the camera trigger delay.
 
 We've attempted to replicate this general idea in the sidekick system. We have programmed an Arduino to serve as a low-quality, USB-controlled trigger pulse generator for the other elements of the sidekick system. Just like in a real laser laboratory, this Arduino pulse generator outputs up to eight independently delayed trigger signals over BNC cables.
 
@@ -48,22 +48,19 @@ We've attempted to replicate this general idea in the sidekick system. We have p
 
 #### Pulsed Light Source
 
-Arduino Triggered LEDs in the Sidekick System
-* Light Source: 6X independently timed LEDs
-* Example Pulse Duration: 5 ms
-* Pulse Duration can be Controlled
-* Triggered at multiple points from BNC inputs
-* Receives trigger signals from pulse generator
-* USB controlled via Serial Commands
-* ~$20
+High-intensity lasers are created through a series of amplification stages. Each stage has controls and idiosynchrosies which affect the final laser parameters -- such as energy, spectrum, and duration -- in a non-linear fashion. The amplification stages rely on timing signals from the pulse generator.
 
-Triggered Laser Source in a Laser Lab
-  Light Source: Amplified Laser Beam
-  Example Pulse Duration: 500 fs
-  Pulse Duration can be Controlled
-  Receives trigger signals from pulse generator
-  Many elements within the laser system are controlled via Ethernet or USB Serial Commands
-  ~$1 million, several room footprint
+In the sidekick system, we've attempted to capture some small element of this complexity. We've created a light source that consists of six separate pulsed LEDs. Each LED has an independent delay and and independent pulse duration. The LED system is triggered from a BNC cable running from the pulse generator.
+
+| Feature      | Arduino Triggered LEDs in the Sidekick System | Triggered Laser Source in a Laser Lab |
+| ----------- | ----------- | ----------- | 
+| Light Source | 6X independently timed and delayed LED flashes | Amplified Laser Beam |
+| Example Pulse Duration | 5 ms | 500 fs |
+| Pulse Duration | Controllable | Controllable |
+| Trigger Inputs | BNC Cables from Pulse Generator | BNC Cables from Pulse Generator |
+| System Control | USB controlled via Serial Commands | Varies; Ethernet and USB via Serial Commands |
+| Acquisition Cost | ~$20 | $1 million - $100 million |
+| Footprint | Postcard | Multiple rooms |
 
 #### Triggered Experimental Diagnostics
 
