@@ -18,6 +18,21 @@ Distributed data systems permit data to be acquired, analyzed, and stored at dif
 ## EPICS: Distributed Control for Scientists
 [EPICS](https://epics-controls.org/) is a distributed control system architecture with a large user community in experimental physics. It is entirely open source and has workshops, active development, and active community support. EPICS is used at over a hundred worldwide physics facilities including LIGO, ITER, and SLAC. It is clearly performant, and has the necessary community support – but is the learning curve too steep for staff and students at our smaller university-scale laser facilities? We set out to demonstrate a simple control system feedback loop in EPICS that still maintains levels of relevance to laser laboratories. We nicknamed this the "sidekick system".
 
+# Sidekick System
+## Elements of the Sidekick System
+Our "sidekick system" EPICS demo consists of:
+* Light source (six LEDs)
+* Optical detector (a phototransistor)
+* Shutter (a servo motor which swings an object to block light)
+* Several Raspberry Pi computers
+* Several Arduino microcontrollers
+* Laptops
+* A wired local area network
+
+All components work together thanks to EPICS, which runs on all the computers in the system. The workload of control, acquisition, analysis, and visualization is distributed.
+
+For more details, see the document on the Sidekick Analogies.
+
 ## Next Steps
 This sidekick system could be very useful to small groups looking to explore using EPICS for machine learning feedback loops. We plan to create and ship several of these to collaborators.
 
