@@ -1,5 +1,9 @@
 # DolphinDAQ Docs
 
+## Sidekick System Overview
+1. [Goals of the Sidekick System](sidekick-overview.md)
+2. [Analogy between Key Elements of the Sidekick System and Laser Laboratory](sidekick-analogies.md)
+
 ## Getting Started on Raspberry Pi
 1. [Flash Your Raspberry Pi](pi-flash.md)
 2. [First Boot](pi-first-boot.md)
