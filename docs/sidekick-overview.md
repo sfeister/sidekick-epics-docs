@@ -30,14 +30,58 @@ Our "sidekick system" EPICS demo consists of:
 
 All components work together thanks to EPICS, which runs on all the computers in the system. The workload of control, acquisition, analysis, and visualization is distributed.
 
+## Analogy between Sidekick Elements and Laser Laboratory
+
+#### Trigger Signals for Lasers and Diagnostics
+
+In a real laser system, trigger cables run from a pulse generator (or several) out to all elements of the laser system and the experimental diagnostics. Each trigger line must have independent timing control.
+
+We've attempted to replicate this general idea in the sidekick system. We have programmed an Arduino to serve as a low-quality, USB-controlled trigger pulse generator for the other elements of the sidekick system. Just like in a real laser laboratory, this Arduino pulse generator outputs up to eight independently delayed trigger signals over BNC cables.
+
+| Feature      | Arduino Pulse Generator in the Sidekick System | BNC Model 575 Pulse Generator in a Laser Lab |
+| ----------- | ----------- | ----------- | 
+| Pulse and Delay Resolution: | ~ 1 ms | ~ 250 ps |
+| Typical TTL pulse width | 100 us | 1 us |
+| Trigger Outputs | 8x Independent BNC Outputs | 8x Independent BNC Outputs |
+| System Control | USB via Serial Commands | Ethernet or USB via Serial Commands |
+| Price | ~$20 | ~$5000 |
+
+#### Pulsed Light Source
+
+Arduino Triggered LEDs in the Sidekick System
+* Light Source: 6X independently timed LEDs
+* Example Pulse Duration: 5 ms
+* Pulse Duration can be Controlled
+* Triggered at multiple points from BNC inputs
+* Receives trigger signals from pulse generator
+* USB controlled via Serial Commands
+* ~$20
+
+Triggered Laser Source in a Laser Lab
+  Light Source: Amplified Laser Beam
+  Example Pulse Duration: 500 fs
+  Pulse Duration can be Controlled
+  Receives trigger signals from pulse generator
+  Many elements within the laser system are controlled via Ethernet or USB Serial Commands
+  ~$1 million, several room footprint
+
+#### Triggered Experimental Diagnostics
+
+Triggered Phototransistor Diagnostic in the Sidekick System
+Signal Responds to Light Source Configuration (allows for closed-loop operation)
+Controlled via Ethernet or USB Serial Commands
+Data is retrieved via Ethernet or USB on a shot-by-shot basis
+
+Triggered Experimental Diagnostic in a Laser Lab
+Signal Responds to Light Source Configuration (allows for closed-loop operation)
+Controlled via Ethernet or USB Serial Commands
+Data is retrieved via Ethernet or USB on a shot-by-shot basis
+
 ## Next Steps
 This sidekick system could be very useful to small groups looking to explore using EPICS for machine learning feedback loops. We plan to create and ship several of these to collaborators.
 
 ## What are you qualifications to build this?
 Scott Feister has worked with and made additions to several control systems at high-intensity laser facilities. He has watched what works and what doesn't work in high-repetition-rate data acquisition at these facilities, and learned from his own mistakes there as well.
-
-## Philosophy of a HRR DAQ System for HEDP
-For example, a control system needs to be flexible to adding new parts.
 
 ## Acknowledgments
 This work is supported by Lawrence Livermore National Laboratory, LLC under Subcontract No. B645313, and LDRD 21-ERD-015 and DOE Early Career SCW1651. LLNL is under Prime Contract No. DE-AC52-07NA27344 with the DOE/NNSA.
