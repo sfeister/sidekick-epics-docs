@@ -1,5 +1,6 @@
 
 # Analogy between Sidekick Elements and Laser Laboratory
+The sidekick system is meant to be a very simple analogy to a laser laboratory control system that can fit on your office table. While keeping the system simple and inexpensive, we've tried to incorporate some key elements of complexity you'd find in real-world laser laboratories.
 
 ## Trigger Signals for Lasers and Diagnostics
 
