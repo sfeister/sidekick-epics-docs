@@ -31,7 +31,7 @@ Our "sidekick system" EPICS demo consists of:
 
 All components work together thanks to EPICS, which runs on all the computers in the system. The workload of control, acquisition, analysis, and visualization is distributed.
 
-For more details, see the document on the Sidekick Analogies.
+For more details, see the document on the [Sidekick Analogies](sidekick-analogies.md).
 
 ## Next Steps
 This sidekick system could be very useful to small groups looking to explore using EPICS for machine learning feedback loops. We plan to create and ship several of these to collaborators.
