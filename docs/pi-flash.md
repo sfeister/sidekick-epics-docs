@@ -32,7 +32,7 @@ From within the Raspberry Pi OS Imager software, click the "Operating System / C
 Notes:
 
 1. I chose the Lite version to increase performance by omitting a desktop environment, but you could use any version.
-1. When I wrote this tutorial, the Raspberry Pi OS Lite version I used was at "2021-05-07". You can use the latest version, which loads by default.
+1. When I wrote this tutorial, the Raspberry Pi OS Lite version I used was at "2022-01-08". You can use the latest version, which loads by default.
 
 Back at the main screen of the Raspberry Pi OS imager software, click the "Storage / CHOOSE STORAGE" box, and select your microSD card.
 
