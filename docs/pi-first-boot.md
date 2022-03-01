@@ -11,7 +11,7 @@ You will insert the microSD card you just flashed with Raspberry Pi OS Lite, boo
 * Administrative login to your wireless/wired router login page (for locating IP addresses of network clients)
 
 ## Materials
-* Raspberry Pi
+* Raspberry Pi (I used a Raspberry Pi 4, but any should work)
 * Flashed microSD card from prior instructions
 * Ethernet cable
 * Wired or wireless router
@@ -19,7 +19,7 @@ You will insert the microSD card you just flashed with Raspberry Pi OS Lite, boo
 ## Steps
 ### Boot your Raspberry Pi for the first time (10 minutes)
 1. Insert your finalized microSD card into your Raspberry Pi.
-1. Physically connect your Raspberry Pi to your local area network with an Ethernet cable (or see instructions above for connecting via WiFi).
+1. Physically connect your Raspberry Pi to your local area network with an Ethernet cable (or, if you configured the Pi for WiFi during setup, via WiFi).
 1. Connect power to your Raspberry Pi. It will turn on. Give it a few minutes to complete its first boot initialization.
     
 ### Find your Pi on the Network (5 minutes)
