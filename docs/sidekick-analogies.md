@@ -2,6 +2,8 @@
 # Analogy between Key Elements of the Sidekick System and Laser Laboratory
 The sidekick system is meant to be a very simple analogy to a laser laboratory control system that can fit on your office table. While keeping the system simple and inexpensive, we've tried to incorporate some key elements of complexity you'd find in real-world laser laboratories.
 
+![sidekick photo labeled](https://user-images.githubusercontent.com/7269185/156229417-e227f9f3-2a37-4c73-bf6f-13afc2d09fbb.png)
+
 ## Trigger Signals for Lasers and Diagnostics
 
 In high-intensity laser laboratories, trigger cables fan out from a pulse generator (or several pulse generators) to all elements of the laser system and the experimental diagnostics. Correct trigger timing is essential for everything from flashing the laser diodes to opening the electronic shutter of a detector. Many of these system elements require independent timing signals; for example, we want the laser amplifier delay to be different from the camera trigger delay.
