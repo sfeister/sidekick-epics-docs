@@ -14,7 +14,8 @@ You will insert the microSD card you just flashed with Raspberry Pi OS Lite, boo
 * Raspberry Pi (I used a Raspberry Pi 4, but any should work)
 * Flashed microSD card from prior instructions
 * Ethernet cable
-* Wired or wireless router
+* Wired or wireless router, with internet connection
+* Personal computer
 
 ## Steps
 ### Boot your Raspberry Pi for the first time (10 minutes)
@@ -34,7 +35,7 @@ A more advanced way to do this is to perform a Network Scan. This technique is o
 
 ### SSH into your Pi (5 minutes)
 
-Using your preferred SSH tool, such as [PuTTY](https://www.putty.org/) on Windows, connect with your Raspberry Pi. The username is pi, and the password is as you set in the Raspberry Pi OS Imager settings above.
+Using your preferred SSH tool, such as [PuTTY](https://www.putty.org/) on Windows, connect with your Raspberry Pi from your personal computer. The username is pi, and the password is as you set in the Raspberry Pi OS Imager settings above.
 
 If you are entirely new to SSH, you may want to follow this tutorial: [How to Connect to an SSH Server from Windows, macOS, or Linux](https://www.howtogeek.com/311287/how-to-connect-to-an-ssh-server-from-windows-macos-or-linux/)
 
