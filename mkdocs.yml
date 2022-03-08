@@ -1,0 +1,17 @@
+site_name: DolphinDAQ Documentation
+
+nav:
+    - Sidekick System Overview:
+        - Goals of the Sidekick System: sidekick-overview.md
+        - Analogy between Key Elements of the Sidekick System and Laser Laboratory: 'sidekick-analogies.md'
+    - Getting Started on Raspberry Pi:
+        - Flash Your Raspberry Pi: 'pi-flash.md'
+        - First Boot: 'pi-first-boot.md'
+        - Install EPICS v7: 'pi-epics-install.md'
+        - Install StreamDevice: 'pi-stream-device-install.md'
+        - Install and Configure systemd-ioc: 'pi-systemd-softioc-setup.md'
+
+theme:
+  name: 'readthedocs'
+     
+copyright: Copyright &copy; 2021 <a href="http://www.scottfeister.com">Scott Feister</a>
