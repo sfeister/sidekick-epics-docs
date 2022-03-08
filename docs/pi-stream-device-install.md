@@ -70,7 +70,7 @@ git clone https://github.com/epics-modules/asyn.git
 cd asyn
 ```
     
-Set up the RELEASE file
+Edit the `configure/RELEASE` file for asyn.
 
 ```bash
 nano configure/RELEASE
@@ -108,7 +108,7 @@ Above, we have edited the file to:
 
 Save this file and then build the software.
 
-``bash
+```bash
 make
 ```
 
@@ -129,7 +129,7 @@ git clone https://github.com/paulscherrerinstitute/StreamDevice.git
 cd StreamDevice
 ```
 
-Edit the `configure/RELEASE` file.
+Edit the `configure/RELEASE` file for StreamDevice.
 
 ```bash
 nano configure/RELEASE
@@ -175,7 +175,7 @@ Above, we have edited the `configure/RELEASE` file such that:
 1. Comment out the "CALC" and "PCRE" lines
 1. Set the EPICS_BASE variable to point to the right folder for your computer (SUPPORT is already set up OK)
 
-Next, edit the architecture-specific RELEASE file `configure/RELEASE.Common.${EPICS_HOST_ARCH}`, so that it locates the pcre libraries you installed earlier:
+Next, edit the architecture-specific RELEASE file `configure/RELEASE.Common.${EPICS_HOST_ARCH}` for StreamDevice, so that it locates the pcre libraries you installed earlier:
 
 ```bash
 nano configure/RELEASE.Common.${EPICS_HOST_ARCH}
