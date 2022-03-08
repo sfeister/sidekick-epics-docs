@@ -37,17 +37,19 @@ Note: libpcre3 (runtime files) is probably already installed, but libpcre3-dev (
 ##### (Optional) Verify PCRE installation
 Check that `/usr/include/` now contains header files for PCRE, such as `pcre.h`, and that `/usr/lib/x86_64-linux-gnu/` now contains files such as `libpcre.so`. You can do this in at least two ways:
 
-1. Option A: Go check out package details for libpcre3 and libpcre3-dev and see where items went (see references for package lists, then go to "list files" under your architecture)
+###### Option A: Go check out package details for libpcre3 and libpcre3-dev and see where items went
 
-1. Option B: Call these two commands:
+See the official Debian references online for package lists, then go to "list files" under your architecture.
 
-    1. Call `whereis pcre`. This returns for my system: 
+###### Option B: Call these two commands:
+
+Call `whereis pcre`. This returns for my system: 
 
 ```bash
 pcre: /usr/include/pcre.h /usr/share/man/man3/pcre.3.gz
 ```
 
-    1. Then, call `whereis libpcre`. This returns for my system:
+Then, call `whereis libpcre`. This returns for my system:
 
 ```bash
 libpcre: /usr/lib/arm-linux-gnueabihf/libpcre.a /usr/lib/arm-linux-gnueabihf/libpcre32.so /usr/lib/arm-linux-gnueabihf/libpcre.so /usr/lib/arm-linux-gnueabihf/libpcre32.a /usr/lib/arm-linux-gnueabihf/libpcre16.a /usr/lib/arm-linux-gnueabihf/libpcre16.so
