@@ -1,4 +1,4 @@
-# Deploys the prad website from the ./site/ directory onto CI Keys.
+# Deploys the Sidekick EPICS website from the ./ directory onto CI Keys.
 # Template copied from https://github.com/marketplace/actions/ftp-deploy
 
 on:

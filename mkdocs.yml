@@ -10,9 +10,13 @@ nav:
         - Install EPICS v7: 'pi-epics-install.md'
         - Install StreamDevice: 'pi-stream-device-install.md'
         - Install and Configure systemd-ioc: 'pi-systemd-softioc-setup.md'
+    - EPICS on Your Laptop via Python:
+        - 'epics_on_windows_via_anaconda.md'
+        - 'epics_message_single_computer.md'
+    
 
 extra_css:
-    - stylesheets/extra.css
+    - css/extra.css
   
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
