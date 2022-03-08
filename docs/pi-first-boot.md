@@ -58,7 +58,7 @@ Second, optionally, set your correct timezone. Do this by typing `raspi-config` 
 
 Then, bring your Raspberry Pi OS up-to-date:
 
-```
+```bash
 sudo apt -y update
 sudo apt -y upgrade
 ```
