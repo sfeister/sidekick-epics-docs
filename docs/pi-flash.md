@@ -50,9 +50,11 @@ Check the "Set hostname" box and change from "raspberrypi.local" to "epics1.loca
 Check the "Enable SSH" box and then write a password of your choosing. This will enable us to connect to our Raspberry Pi from a laptop on the local area network, without any display, keyboard, or mouse.
     1. Advanced SSH Users: Alternatively to choosing a password, you can select the public key authorization option and paste in your public key.
 
-Optionally, configure your wifi network settings.
+Optionally, configure your wifi network settings, including your WiFi SSID, WiFi password, and WiFi country.
 
-![image](https://user-images.githubusercontent.com/7269185/156226766-8c914875-aa89-4ba0-bbaf-2ccd396521b5.png)
+Check "Set locale settings", set your locale, and check "Skip first run wizard". This will let you bypass a prompt for your locale settings when you first boot your raspberry pi.
+
+![image](https://user-images.githubusercontent.com/7269185/157144632-0e0cdc57-0efb-4011-9e6a-2fc02c759159.png)
 
 Now that you've configured your advanced options, press the "Save" button.
 
