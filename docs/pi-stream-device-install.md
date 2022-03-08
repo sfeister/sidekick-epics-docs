@@ -43,15 +43,15 @@ Check that `/usr/include/` now contains header files for PCRE, such as `pcre.h`,
 
     1. Call `whereis pcre`. This returns for my system: 
 
-    ```bash
-    pcre: /usr/include/pcre.h /usr/share/man/man3/pcre.3.gz
-    ```
+```bash
+pcre: /usr/include/pcre.h /usr/share/man/man3/pcre.3.gz
+```
 
     1. Then, call `whereis libpcre`. This returns for my system:
 
-    ```bash
-    libpcre: /usr/lib/arm-linux-gnueabihf/libpcre.a /usr/lib/arm-linux-gnueabihf/libpcre32.so /usr/lib/arm-linux-gnueabihf/libpcre.so /usr/lib/arm-linux-gnueabihf/libpcre32.a /usr/lib/arm-linux-gnueabihf/libpcre16.a /usr/lib/arm-linux-gnueabihf/libpcre16.so
-    ```
+```bash
+libpcre: /usr/lib/arm-linux-gnueabihf/libpcre.a /usr/lib/arm-linux-gnueabihf/libpcre32.so /usr/lib/arm-linux-gnueabihf/libpcre.so /usr/lib/arm-linux-gnueabihf/libpcre32.a /usr/lib/arm-linux-gnueabihf/libpcre16.a /usr/lib/arm-linux-gnueabihf/libpcre16.so
+```
 
 ##### Compile and install asynDriver module, which is a pre-requisite for stream
 
