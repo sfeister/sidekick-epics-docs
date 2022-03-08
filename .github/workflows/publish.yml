@@ -1,0 +1,23 @@
+# Deploys the prad website from the ./site/ directory onto CI Keys.
+# Template copied from https://github.com/marketplace/actions/ftp-deploy
+
+on:
+  push:
+    branches:
+      - gh-pages
+name: Publish Website
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@gh-pages
+      with:
+        fetch-depth: 2
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      with:
+        ftp-server: ftp://ftp.scott.cikeys.com/
+        ftp-username: scottsidekick@scott.cikeys.com
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: /
