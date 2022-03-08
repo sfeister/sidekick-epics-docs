@@ -1,4 +1,4 @@
-site_name: DolphinDAQ Documentation
+site_name: Sidekick EPICS Documentation
 
 nav:
     - Sidekick System Overview:
@@ -11,7 +11,28 @@ nav:
         - Install StreamDevice: 'pi-stream-device-install.md'
         - Install and Configure systemd-ioc: 'pi-systemd-softioc-setup.md'
 
+extra_css:
+    - stylesheets/extra.css
+  
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML
+#  - https://unpkg.com/mermaid/dist/mermaid.min.js
+  
+markdown_extensions:
+    - toc:
+        title: 
+        permalink: True
+        toc_depth: 2
+    - admonition
+    - pymdownx.superfences
+    - pymdownx.tabbed
+    - pymdownx.details
+    - pymdownx.inlinehilite
+    - pymdownx.arithmatex # Note: requires extra_javascript above
+    - codehilite
+    - footnotes
+
 theme:
-  name: 'readthedocs'
+  name: 'material'
      
-copyright: Copyright &copy; 2021 <a href="http://www.scottfeister.com">Scott Feister</a>
+copyright: Copyright &copy; 2022 <a href="http://www.scottfeister.com">Scott Feister</a>
