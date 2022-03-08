@@ -28,10 +28,10 @@ From your SSH terminal window, bring all software on the Raspberry Pi fully up-t
 1. Ensure your Raspberry Pi has a working internet connection.
 1. Bring your Raspberry Pi OS up-to-date:
 
-    ```bash
-    sudo apt -y update
-    sudo apt -y upgrade
-    ```
+```bash
+sudo apt -y update
+sudo apt -y upgrade
+```
 
 Note: The `-y` lets you skip typing "yes" to prompts.
 
@@ -41,36 +41,36 @@ Plan for about fifteen minutes of downloading and installing software upgrades o
 
 1. Ensure your Raspberry Pi has a working internet connection.
 1. Install basic build tools (the *build-essential* package includes key development tools like gcc and perl)
- 
-    ```bash
-    sudo apt -y install build-essential
-    ```
+
+```bash
+sudo apt -y install build-essential
+```
     
 1. Install git
 
-    ```bash
-    sudo apt -y install git
-    ```
-    
+```bash
+sudo apt -y install git
+```
+
 1. (Optional) Install networking tools, including nmap, netstat, and ifconfig
 
-    ```bash
-    sudo apt -y install net-tools
-    ```
+```bash
+sudo apt -y install net-tools
+```
     
 1. (Optional) Confirm GNU make is of version 3.81 or higher
 
-    ```bash
-    make --version
-    ```
+```bash
+make --version
+```
     
     What I found installed was "GNU Make 4.2.1" at the time of this tutorial.
     
 1. (Optional) Confirm that perl is version 5.8.1 or higher
 
-    ```bash
-    perl --version
-    ```
+```bash
+perl --version
+```
     
     What I found installed was Perl "v5.28.1" at the time of this tutorial.
     
@@ -78,9 +78,9 @@ Plan for about fifteen minutes of downloading and installing software upgrades o
 
     (EPICS installation README mentions using readline)
     
-    ```bash
-    apt search readline-common
-    ```
+```bash
+apt search readline-common
+```
     
     What I found installed was readline version 7.0-5 at time of writing this tutorial.
     
@@ -89,24 +89,24 @@ This portion of our instructions are copied nearly directly from the [EPICS 7 ge
 
 1. Create an EPICS folder, download the latest repository code, and compile EPICS base from source:
  
-    ```bash
-    mkdir $HOME/EPICS
-    cd $HOME/EPICS
-    git clone --recursive https://github.com/epics-base/epics-base.git
-    cd epics-base
-    make -j4
-    ```
-    
+```bash
+mkdir $HOME/EPICS
+cd $HOME/EPICS
+git clone --recursive https://github.com/epics-base/epics-base.git
+cd epics-base
+make -j4
+```
+
     (Note: the `make -j4` means to compile EPICS using eight threads, to speed up the process. A more bulletproof method is to just run `make`, which uses one thread, and may take longer. I'm not sure if the -j4 helped; this step still took me about thirty minutes on a Raspberry Pi Model 3 B+ and even froze up at one point; I had to restart it.)
 
 1. Append the following environment variable declarations to your the last lines of your ~/.bashrc file. For example, edit this file via `nano ~/.bashrc`, then scroll to the end and add these lines below.
 
-    ```bash
-    # EPICS Environment Variables
-    export EPICS_BASE=${HOME}/EPICS/epics-base
-    export EPICS_HOST_ARCH=$(${EPICS_BASE}/startup/EpicsHostArch)
-    export PATH=${EPICS_BASE}/bin/${EPICS_HOST_ARCH}:${PATH}
-    ```
+```bash
+# EPICS Environment Variables
+export EPICS_BASE=${HOME}/EPICS/epics-base
+export EPICS_HOST_ARCH=$(${EPICS_BASE}/startup/EpicsHostArch)
+export PATH=${EPICS_BASE}/bin/${EPICS_HOST_ARCH}:${PATH}
+```
     
 1. The variables aren't yet updated in your system. You have two options to load the variables you just wrote into your ~/.bashrc file.
     1. Option 1: Close the SSH window, and then SSH back into your Pi a second time.
