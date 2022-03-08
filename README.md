@@ -1,4 +1,4 @@
-# dolphindaq-docs
-DolphinDAQ (Data Acquisition System) Documentation
+# sidekick-epics-docs
+Sidekick Epics Documentation
 
-This repository holds markdown files to generate the DolphinDAQ documentation website: https://dolphindaq-docs.readthedocs.io/en/latest/
+This repository holds markdown files to generate the Sidekick Epics documentation website.
