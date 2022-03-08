@@ -34,7 +34,8 @@ sudo apt install -y libpcre3 libpcre3-dev
 
 Note: libpcre3 (runtime files) is probably already installed, but libpcre3-dev (include files, etc) is probably not.
 
-(Optional) Check that `/usr/include/` now contains header files for PCRE, such as `pcre.h`, and that `/usr/lib/x86_64-linux-gnu/` now contains files such as `libpcre.so`. You can do this in at least two ways:
+##### (Optional) Verify PCRE installation
+Check that `/usr/include/` now contains header files for PCRE, such as `pcre.h`, and that `/usr/lib/x86_64-linux-gnu/` now contains files such as `libpcre.so`. You can do this in at least two ways:
 
 1. Option A: Go check out package details for libpcre3 and libpcre3-dev and see where items went (see references for package lists, then go to "list files" under your architecture)
 
@@ -53,7 +54,8 @@ Note: libpcre3 (runtime files) is probably already installed, but libpcre3-dev (
     ```
 
 ##### Compile and install asynDriver module, which is a pre-requisite for stream
-1. Navigate into the directory you made to hold EPICS items, into which you cloned the epics-base repository, and create a new folder to hold support items for EPICS base (e.g. additional modules).
+
+Navigate into the directory you made to hold EPICS items, into which you cloned the epics-base repository, and create a new folder to hold support items for EPICS base (e.g. additional modules).
 
 ```bash
 cd $HOME/EPICS
@@ -61,22 +63,18 @@ mkdir support
 cd support
 ```
 
-1. Download asynDriver module source code and navigate into the folder
+Download asynDriver module source code and navigate into the folder
 
 ```bash
 git clone https://github.com/epics-modules/asyn.git
 cd asyn
 ```
     
-1. Set up the RELEASE file
+Set up the RELEASE file
 
 ```bash
 nano configure/RELEASE
 ```
-
-1. Comment out unneeded lines IPAC, SEQ, CALC, SSCAN, etc.
-2. Set the SUPPORT and EPICS_BASE variables to point to the right folders for your computer
-3. E.g. make the file look like this:
 
 ```bash
 #RELEASE Location of external products
@@ -104,7 +102,11 @@ EPICS_BASE=/home/pi/EPICS/epics-base
 -include $(TOP)/configure/RELEASE.local
 ```
 
-Then finally, build the software.
+Above, we have edited the file to:
+1. Comment out unneeded lines IPAC, SEQ, CALC, SSCAN, etc.
+2. Set the SUPPORT and EPICS_BASE variables to point to the right folders for your computer
+
+Save this file and then build the software.
 
 ``bash
 make
@@ -127,52 +129,53 @@ git clone https://github.com/paulscherrerinstitute/StreamDevice.git
 cd StreamDevice
 ```
 
-Set up the RELEASE file
+Edit the `configure/RELEASE` file.
 
 ```bash
 nano configure/RELEASE
 ```
 
+```bash
+#RELEASE Location of external products
+# Run "gnumake clean uninstall install" in the application
+# top directory each time this file is changed.
+#
+# NOTE: The build does not check dependencies on files
+# external to this application. Thus you should run
+# "gnumake clean uninstall install" in the top directory
+# each time EPICS_BASE, SNCSEQ, or any other external
+# module defined in the RELEASE file is rebuilt.
+
+TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
+
+# If you don't want to install into $(TOP) then
+# define INSTALL_LOCATION_APP here
+#INSTALL_LOCATION_APP=<fullpathname>
+
+SUPPORT=$(TOP)/..
+-include $(TOP)/../configure/SUPPORT.$(EPICS_HOST_ARCH)
+
+ASYN=$(SUPPORT)/asyn
+#CALC=$(SUPPORT)/calc-3-7
+#PCRE=$(SUPPORT)/pcre-7-2
+
+# EPICS_BASE usually appears last so other apps can override stuff:
+EPICS_BASE=/home/pi/EPICS/epics-base
+
+# These lines allow developers to override these RELEASE settings
+# without having to modify this file directly.
+-include $(TOP)/../RELEASE.local
+-include $(TOP)/../RELEASE.$(EPICS_HOST_ARCH).local
+-include $(TOP)/configure/RELEASE.local
+```
+
+Above, we have edited the `configure/RELEASE` file such that:
+
 1. Fix the "ASYN" line to match your actual file path from above: `ASYN=$(SUPPORT)/asyn`
 1. Comment out the "CALC" and "PCRE" lines
 1. Set the EPICS_BASE variable to point to the right folder for your computer (SUPPORT is already set up OK)
-1. E.g. make the file look like this:
 
-    ```bash
-    #RELEASE Location of external products
-    # Run "gnumake clean uninstall install" in the application
-    # top directory each time this file is changed.
-    #
-    # NOTE: The build does not check dependencies on files
-    # external to this application. Thus you should run
-    # "gnumake clean uninstall install" in the top directory
-    # each time EPICS_BASE, SNCSEQ, or any other external
-    # module defined in the RELEASE file is rebuilt.
-
-    TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
-
-    # If you don't want to install into $(TOP) then
-    # define INSTALL_LOCATION_APP here
-    #INSTALL_LOCATION_APP=<fullpathname>
-
-    SUPPORT=$(TOP)/..
-    -include $(TOP)/../configure/SUPPORT.$(EPICS_HOST_ARCH)
-
-    ASYN=$(SUPPORT)/asyn
-    #CALC=$(SUPPORT)/calc-3-7
-    #PCRE=$(SUPPORT)/pcre-7-2
-
-    # EPICS_BASE usually appears last so other apps can override stuff:
-    EPICS_BASE=/home/pi/EPICS/epics-base
-
-    # These lines allow developers to override these RELEASE settings
-    # without having to modify this file directly.
-    -include $(TOP)/../RELEASE.local
-    -include $(TOP)/../RELEASE.$(EPICS_HOST_ARCH).local
-    -include $(TOP)/configure/RELEASE.local
-    ```
-
-Set up the architecture-specific RELEASE file, so that it locates the pcre libraries you installed earlier:
+Next, edit the architecture-specific RELEASE file `configure/RELEASE.Common.${EPICS_HOST_ARCH}`, so that it locates the pcre libraries you installed earlier:
 
 ```bash
 nano configure/RELEASE.Common.${EPICS_HOST_ARCH}
@@ -182,10 +185,9 @@ nano configure/RELEASE.Common.${EPICS_HOST_ARCH}
 
 Based on examining the outputs of `whereis pcre` and `whereis libpcre` (see the earlier step where we were installing the PCRE dependency), add the following to `configure/RELEASE.Common.${EPICS_HOST_ARCH}` that match the path prefixes for our system:
 
-        ```bash
-        PCRE_INCLUDE=/usr/include
-        PCRE_LIB=/usr/lib
-        ```
+```bash
+PCRE_INCLUDE=/usr/include
+PCRE_LIB=/usr/lib
+```
         
-Save the file, then run `make` (or `make -j4` for faster results).
-    
+Save the new file, then run `make` (or `make -j4` for faster results).
