@@ -1,4 +1,3 @@
-
 ---
 layout: default
 title: Overview of the Sidekick System
