@@ -37,14 +37,3 @@ For more details, see the document on the [Sidekick Analogies](sidekick-analogie
 
 ## Next Steps
 This sidekick system could be very useful to small groups looking to explore using EPICS for machine learning feedback loops. We plan to create and ship several of these to collaborators.
-
-## What are your qualifications to build this?
-Scott Feister has worked with and made additions to several control systems at high-intensity laser facilities. He has watched what works and what doesn't work in high-repetition-rate data acquisition at these facilities, and learned from his own mistakes there as well.
-
-## The Team
-This sidekick system was created by (left to right in photo below): Keily Valdez Sereno, Emiko Ito, and Scott Feister at California State University Channel Islands.
-
-![Sidekick Group Photo Small](https://user-images.githubusercontent.com/7269185/156228192-bc763eeb-fdaa-4bef-9641-b6332181b026.JPG)
-
-## Acknowledgments
-This work is supported by Lawrence Livermore National Laboratory, LLC under Subcontract No. B645313, and LDRD 21-ERD-015 and DOE Early Career SCW1651. LLNL is under Prime Contract No. DE-AC52-07NA27344 with the DOE/NNSA.
