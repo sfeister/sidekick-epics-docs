@@ -1,6 +1,4 @@
-# Sidekick EPICS Documentation
-
-## Welcome to the documentation for the Sidekick EPICS system!
+# Welcome to the documentation for the Sidekick EPICS system!
 
 The goal of the sidekick system is to model some of the challenges of control systems for a real-world high-intensity laser system. On this website you will find an overview of the sidekick system, as well as detailed instructions on setting up your own from scratch.
 
