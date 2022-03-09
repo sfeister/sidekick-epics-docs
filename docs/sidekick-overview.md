@@ -1,3 +1,11 @@
+
+---
+layout: default
+title: Overview of the Sidekick System
+authors:
+    - Scott Feister
+---
+
 # Overview of the Sidekick System
 
 The goal of this system is to model some of the challenges of control systems for a real-world high-intensity laser system.
