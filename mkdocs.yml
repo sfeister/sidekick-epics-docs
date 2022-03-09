@@ -13,6 +13,7 @@ nav:
     - EPICS on Your Laptop via Python:
         - 'epics_on_windows_via_anaconda.md'
         - 'epics_message_single_computer.md'
+    - 'about.md'
     
 
 extra_css:
