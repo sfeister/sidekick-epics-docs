@@ -1,9 +1,8 @@
 site_name: Sidekick EPICS Documentation
 
 nav:
-    - Sidekick System Overview:
-        - 'sidekick-overview.md'
-        - Analogy between Key Elements of the Sidekick System and Laser Laboratory: 'sidekick-analogies.md'
+    - Sidekick Overview: 'sidekick-overview.md'
+    - Sidekick Analogies: 'sidekick-analogies.md'
     - Getting Started on Raspberry Pi:
         - Flash Your Raspberry Pi: 'pi-flash.md'
         - First Boot: 'pi-first-boot.md'
