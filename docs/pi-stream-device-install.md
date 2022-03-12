@@ -18,13 +18,12 @@ StreamDevice will facilitate your serial communication with Ethernet devices and
 * Raspberry Pi, connected to local area network
 
 ## Steps
+
 ### SSH into your Raspberry Pi.
 
 Follow the prior instructions to SSH into your Raspberry Pi from your Laptop / Computer.
 
-### Install StreamDevice Module for serial device communication
-
-#### Install dependencies for StreamDevice (10 minutes)
+### Install dependencies for StreamDevice (10 minutes)
 
 ##### Install PCRE packages
 
@@ -34,14 +33,14 @@ sudo apt install -y libpcre3 libpcre3-dev
 
 Note: libpcre3 (runtime files) is probably already installed, but libpcre3-dev (include files, etc) is probably not.
 
-##### (Optional) Verify PCRE installation
+###### (Optional) Verify PCRE installation
 Check that `/usr/include/` now contains header files for PCRE, such as `pcre.h`, and that `/usr/lib/x86_64-linux-gnu/` now contains files such as `libpcre.so`. You can do this in at least two ways:
 
-###### Option A: Go check out package details for libpcre3 and libpcre3-dev and see where items went
+###### (Optional) Option A for verification: Go check out package details for libpcre3 and libpcre3-dev and see where items went
 
 See the official Debian references online for package lists, then go to "list files" under your architecture.
 
-###### Option B: Call these two commands:
+###### (Optional) Option B for verification: Call these two commands:
 
 Call `whereis pcre`. This returns for my system: 
 
@@ -55,7 +54,9 @@ Then, call `whereis libpcre`. This returns for my system:
 libpcre: /usr/lib/arm-linux-gnueabihf/libpcre.a /usr/lib/arm-linux-gnueabihf/libpcre32.so /usr/lib/arm-linux-gnueabihf/libpcre.so /usr/lib/arm-linux-gnueabihf/libpcre32.a /usr/lib/arm-linux-gnueabihf/libpcre16.a /usr/lib/arm-linux-gnueabihf/libpcre16.so
 ```
 
-##### Compile and install asynDriver module, which is a pre-requisite for stream
+### Compile and install asyn
+
+The *asyn* EPICS support module is another pre-requisite for *streamDevice*.
 
 Navigate into the directory you made to hold EPICS items, into which you cloned the epics-base repository, and create a new folder to hold support items for EPICS base (e.g. additional modules).
 
@@ -105,18 +106,20 @@ EPICS_BASE=/home/pi/EPICS/epics-base
 ```
 
 Above, we have edited the file to:
+
 1. Comment out unneeded lines IPAC, SEQ, CALC, SSCAN, etc.
+
 2. Set the SUPPORT and EPICS_BASE variables to point to the right folders for your computer
 
 Save this file and then build the software.
 
 ```bash
-make
+make -j8
 ```
 
 (took me about five minutes)
 
-#### Compile and install StreamDevice
+### Compile and install StreamDevice
 
 Navigate back into the directory you made to hold EPICS support items.
 
@@ -174,7 +177,9 @@ EPICS_BASE=/home/pi/EPICS/epics-base
 Above, we have edited the `configure/RELEASE` file such that:
 
 1. Fix the "ASYN" line to match your actual file path from above: `ASYN=$(SUPPORT)/asyn`
+
 1. Comment out the "CALC" and "PCRE" lines
+
 1. Set the EPICS_BASE variable to point to the right folder for your computer (SUPPORT is already set up OK)
 
 Next, edit the architecture-specific RELEASE file `configure/RELEASE.Common.${EPICS_HOST_ARCH}` for StreamDevice, so that it locates the pcre libraries you installed earlier:
@@ -192,4 +197,4 @@ PCRE_INCLUDE=/usr/include
 PCRE_LIB=/usr/lib
 ```
         
-Save the new file, then run `make` (or `make -j4` for faster results).
+Save the new file, then run `make` (or `make -j8` for faster results).

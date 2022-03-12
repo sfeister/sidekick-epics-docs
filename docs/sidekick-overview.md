@@ -30,6 +30,7 @@ Distributed data systems permit data to be acquired, analyzed, and stored at dif
 # Sidekick System
 ## Elements of the Sidekick System
 Our "sidekick system" EPICS demo consists of:
+
 * Light source (six LEDs)
 * Optical detector (a phototransistor)
 * Shutter (a servo motor which swings an object to block light)
