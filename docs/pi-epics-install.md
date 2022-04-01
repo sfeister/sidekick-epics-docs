@@ -7,7 +7,6 @@ EPICS 7 provides the base infrastructure for EPICS, upon which further EPICS pac
 1. [EPICS 7 getting started guide](https://docs.epics-controls.org/projects/how-tos/en/latest/getting-started/installation.html)
 
 ## Pre-requisites
-* EPICS v7 is already installed on your Raspberry Pi, per prior instructions
 * Capability to SSH into your Raspberry Pi
 * Working internet connection for your Raspberry Pi
 
@@ -99,7 +98,7 @@ make -j8
 (Note: the `make -j8` means to compile EPICS using eight threads, to speed up this step on a multicore machine. A more bulletproof method is to just run `make`, which uses one thread, and may take longer.)
 
 #### Configure your user profile
-Append the following environment variable declarations to your the last lines of your ~/.bashrc file. For example, edit this file via `nano ~/.bashrc`, then scroll to the end and add these lines below.
+Append the following environment variable declarations to your the last lines of `.bashrc` file, which is located in your home directory (a.k.a. your `~` directory.) For example, open `~/.bashrc` using the `nano` text editor: `nano ~/.bashrc`, then scroll to the end and add these lines below.
 
 ```bash
 # EPICS Environment Variables
@@ -108,7 +107,7 @@ export EPICS_HOST_ARCH=$(${EPICS_BASE}/startup/EpicsHostArch)
 export PATH=${EPICS_BASE}/bin/${EPICS_HOST_ARCH}:${PATH}
 ```
     
-The variables aren't yet updated in your system. You have two options to load the variables you just wrote into your ~/.bashrc file.
+The variables aren't yet updated in your system. You have two options to load the variables you just wrote into your `~/.bashrc` file.
 
 1. Option 1: Close the SSH window, and then SSH back into your Pi a second time.
 2. Option 2: Run the command `source ~/.bashrc` and skip closing/re-opening your SSH window.
