@@ -13,7 +13,8 @@ nav:
     - EPICS on Your Laptop via Python:
         - 'epics_on_windows_via_anaconda.md'
         - 'epics_message_single_computer.md'
-        - Hello Sidekick Demo: 'HelloSidekick.ipynb'
+        - 'demos/HelloSidekick.ipynb'
+        - 'demos/OpenLoop.ipynb'
     - 'sidekick-source-components.md'
     - 'about.md'
     
