@@ -13,9 +13,13 @@ nav:
     - EPICS on Your Laptop via Python:
         - 'epics_on_windows_via_anaconda.md'
         - 'epics_message_single_computer.md'
+        - Hello Sidekick Demo: 'HelloSidekick.ipynb'
     - 'sidekick-source-components.md'
     - 'about.md'
     
+
+plugins:
+    - mkdocs-jupyter # https://github.com/danielfrg/mkdocs-jupyter
 
 extra_css:
     - css/extra.css
