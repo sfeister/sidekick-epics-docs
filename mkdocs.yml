@@ -3,19 +3,22 @@ site_name: Sidekick EPICS Documentation
 nav:
     - Sidekick Overview: 'sidekick-overview.md'
     - Sidekick Analogies: 'sidekick-analogies.md'
-    - Getting Started on Raspberry Pi:
-        - Flash Your Raspberry Pi: 'pi-flash.md'
-        - First Boot: 'pi-first-boot.md'
-        - Install EPICS v7: 'pi-epics-install.md'
-        - Install StreamDevice: 'pi-stream-device-install.md'
-        - Install and Configure systemd-ioc: 'pi-systemd-softioc-setup.md'
-        - 'pi-systemd-softioc-sidekick.md'
-    - EPICS on Your Laptop via Python:
-        - 'epics_on_windows_via_anaconda.md'
-        - 'epics_message_single_computer.md'
+    - Python Demos:
         - 'demos/HelloSidekick.ipynb'
         - 'demos/OpenLoop.ipynb'
-    - 'sidekick-source-components.md'
+        - 'demos/OpenLoopBrightness.ipynb'
+    - Building A Sidekick System:
+        - Getting Started on Raspberry Pi:
+            - Flash Your Raspberry Pi: 'pi-flash.md'
+            - First Boot: 'pi-first-boot.md'
+            - Install EPICS v7: 'pi-epics-install.md'
+            - Install StreamDevice: 'pi-stream-device-install.md'
+            - Install and Configure systemd-ioc: 'pi-systemd-softioc-setup.md'
+            - 'pi-systemd-softioc-sidekick.md'
+        - 'sidekick-source-components.md'
+    - Getting Set Up for EPICS in Python:
+        - 'epics_on_windows_via_anaconda.md'
+        - 'epics_message_single_computer.md'
     - 'about.md'
     
 
