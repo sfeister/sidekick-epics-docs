@@ -1,5 +1,11 @@
+---
+layout: default
+title: Laboratory Analogies
+authors:
+    - Scott Feister
+---
 
-# Analogy between Key Elements of the Sidekick System and Laser Laboratory
+# Analogies to Laboratory Equipment
 The sidekick system is meant to be a very simple analogy to a laser laboratory control system that can fit on your office table. While keeping the system simple and inexpensive, we've tried to incorporate some key elements of complexity you'd find in real-world laser laboratories.
 
 ![sidekick photo labeled](https://user-images.githubusercontent.com/7269185/156229417-e227f9f3-2a37-4c73-bf6f-13afc2d09fbb.png)
