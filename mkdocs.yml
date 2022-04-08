@@ -11,6 +11,7 @@ nav:
         - 'demos/OpenLoop.ipynb'
         - 'demos/OpenLoopBrightness.ipynb'
         - 'demos/OpenLoopHRR.ipynb'
+        - 'demos/ClosedLoopBasics.ipynb'
     - Building A Sidekick System:
         - 'sidekick-source-components.md'
         - Configure Raspberry Pis:
