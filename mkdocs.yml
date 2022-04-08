@@ -5,6 +5,7 @@ nav:
     - 'sidekick-motivation.md'
     - 'sidekick-architecture.md'
     - 'sidekick-analogies.md'
+    - 'commandLists.md'
     - Python Demos:
         - 'epics_on_windows_via_anaconda.md'
         - 'demos/HelloSidekick.ipynb'
