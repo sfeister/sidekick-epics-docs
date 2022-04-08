@@ -1,3 +1,11 @@
+---
+layout: default
+title: Command Lists
+authors:
+    - Emiko Ito
+---
+
+
 # Command Lists
 ## LEDS
 | command                   | description                                                        |
