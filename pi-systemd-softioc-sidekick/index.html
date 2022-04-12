@@ -1,0 +1,827 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.9">
+    
+    
+      
+        <title>Download Sidekick IOCs - Sidekick EPICS Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.120efc48.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.9647289d.min.css">
+        
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#blend-sidekick-files-into-the-streamdevice-demo-iocs" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Sidekick EPICS Documentation" class="md-header__button md-logo" aria-label="Sidekick EPICS Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Sidekick EPICS Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Download Sidekick IOCs
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Sidekick EPICS Documentation" class="md-nav__button md-logo" aria-label="Sidekick EPICS Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Sidekick EPICS Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sidekick-overview/" class="md-nav__link">
+        Overview
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sidekick-motivation/" class="md-nav__link">
+        Motivation
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sidekick-architecture/" class="md-nav__link">
+        Architecture
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sidekick-analogies/" class="md-nav__link">
+        Laboratory Analogies
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../commandList/" class="md-nav__link">
+        Command Lists
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_6">
+          Python Demos
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Python Demos" data-md-level="1">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Python Demos
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epics_on_windows_via_anaconda/" class="md-nav__link">
+        EPICS on Windows via Anaconda Python
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../demos/HelloSidekick/" class="md-nav__link">
+        Hello, Sidekick System!
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../demos/OpenLoop/" class="md-nav__link">
+        Open Loop: Basics
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../demos/OpenLoopBrightness/" class="md-nav__link">
+        Open Loop Demo: Stepping through LED Brightnesses
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../demos/OpenLoopHRR/" class="md-nav__link">
+        Open Loop: High Rep Rate
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../demos/ClosedLoopBasics/" class="md-nav__link">
+        Closed Loop: Basics
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7" type="checkbox" id="__nav_7" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7">
+          Building A Sidekick System
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Building A Sidekick System" data-md-level="1">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          Building A Sidekick System
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sidekick-source-components/" class="md-nav__link">
+        Source Components
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_7_2" type="checkbox" id="__nav_7_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_7_2">
+          Configure Raspberry Pis
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Configure Raspberry Pis" data-md-level="2">
+        <label class="md-nav__title" for="__nav_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          Configure Raspberry Pis
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pi-flash/" class="md-nav__link">
+        Flash Your Raspberry Pi
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pi-first-boot/" class="md-nav__link">
+        First Boot
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pi-epics-install/" class="md-nav__link">
+        Install EPICS v7
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pi-stream-device-install/" class="md-nav__link">
+        Install StreamDevice
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pi-systemd-softioc-setup/" class="md-nav__link">
+        Install and Configure systemd-ioc
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Download Sidekick IOCs
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Download Sidekick IOCs
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisites" class="md-nav__link">
+    Pre-requisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materials" class="md-nav__link">
+    Materials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About Us
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#references" class="md-nav__link">
+    References
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisites" class="md-nav__link">
+    Pre-requisites
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#materials" class="md-nav__link">
+    Materials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#steps" class="md-nav__link">
+    Steps
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="blend-sidekick-files-into-the-streamdevice-demo-iocs">Blend Sidekick Files into the StreamDevice Demo IOCs<a class="headerlink" href="#blend-sidekick-files-into-the-streamdevice-demo-iocs" title="Permanent link">&para;</a></h1>
+<p>You will download the StreamDevice configuration files for the sidekick system from GitHub, and use symbolic links to insert them into the demo IOC for StreamDevice.</p>
+<p>You will also create an IOC configuration usable from systemd-softioc, such that you can automatically start the IOCs at first boot, and manage the iocs with <code>manage-iocs</code>.</p>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
+<ol>
+<li><a href="https://github.com/NSLS-II/systemd-softioc">Systemd-SoftIOC GitHub Page</a></li>
+</ol>
+<h2 id="pre-requisites">Pre-requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Internet connection</li>
+</ul>
+<h2 id="materials">Materials<a class="headerlink" href="#materials" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Raspberry Pi with EPICS, StreamDevice, and systemd-softioc installed</li>
+</ul>
+<h2 id="steps">Steps<a class="headerlink" href="#steps" title="Permanent link">&para;</a></h2>
+<h3 id="download-sidekick-epics-source-files">Download Sidekick EPICS Source Files<a class="headerlink" href="#download-sidekick-epics-source-files" title="Permanent link">&para;</a></h3>
+<p>Navigate into your EPICS folder, and then download the latest sidekick-epics files from GitHub via <code>git clone</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> <span class="nv">$HOME</span>
+git clone https://github.com/sfeister/sidekick-epics.git
+</code></pre></div>
+<p>This will create a folder <code>sidekick-epics</code> in your home directory. Inside will be the latest, up-to-date prototype files for StreamDevice. At any time, you can navigate into that directory and call <code>git pull</code> to update the files to the latest version.</p>
+<h3 id="create-new-ioc-folder-for-systemd-softioc">Create new IOC folder for systemd-softioc<a class="headerlink" href="#create-new-ioc-folder-for-systemd-softioc" title="Permanent link">&para;</a></h3>
+<p>Note: Follow along here with the instructions at the <a href="https://github.com/NSLS-II/systemd-softioc">Systemd-SoftIOC GitHub Page</a> for more details about what these settings do!</p>
+<h4 id="note-down-hostname-and-the-next-good-port">Note down hostname and the next good port.<a class="headerlink" href="#note-down-hostname-and-the-next-good-port" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>hostname -s
+manage-iocs nextport
+</code></pre></div>
+<p>I got as return:
+<div class="highlight"><pre><span></span><code>epics1
+4050
+</code></pre></div></p>
+<p>Make note of both of these items! You will use them in the config below.</p>
+<h4 id="assume-the-softioc-user-create-an-ioc-folder-and-edit-a-config-file">Assume the softioc user, create an IOC folder, and edit a config file<a class="headerlink" href="#assume-the-softioc-user-create-an-ioc-folder-and-edit-a-config-file" title="Permanent link">&para;</a></h4>
+<p>Change into the softioc user.
+<div class="highlight"><pre><span></span><code>sudo -s -u softioc
+</code></pre></div></p>
+<p>Create a unique folder within <code>/epics/iocs/</code> for this new IOC.</p>
+<p>For example, I am choosing to name my IOC <code>LEDs</code>. Then, I would do:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> /epics/iocs
+mkdir LEDs
+<span class="nb">cd</span> LEDs
+nano config
+</code></pre></div>
+<p>And then I would edit the config file to say:</p>
+<div class="highlight"><pre><span></span><code>NAME=LEDs
+PORT=4050
+HOST=epics1
+USER=softioc
+</code></pre></div>
+<p>Where I set the <code>HOST</code> and <code>PORT</code> from what I noted down above.</p>
+<h4 id="link-in-the-streamdevice-demo-ioc-files">Link in the StreamDevice Demo IOC files<a class="headerlink" href="#link-in-the-streamdevice-demo-ioc-files" title="Permanent link">&para;</a></h4>
+<p>Continue as the <code>softioc</code> user for this portion.</p>
+<p>From within the same IOC folder, make symbolic links to all the contents of the StreamDevice demo IOC folder.</p>
+<div class="highlight"><pre><span></span><code>ln -s /home/pi/EPICS/support/StreamDevice/streamApp/* ./
+</code></pre></div>
+<p>This is a cheat to avoid building your own IOC -- we will just basically copy / link in the files from the StreamDevice demo instead!</p>
+<h4 id="link-in-the-sidekick-epics-proto-files">Link in the Sidekick EPICS proto files<a class="headerlink" href="#link-in-the-sidekick-epics-proto-files" title="Permanent link">&para;</a></h4>
+<p>Continue as the <code>softioc</code> user for this portion.</p>
+<p>From within the same IOC folder, make symbolic links to all the contents of the sidekick EPICS StreamDevice folder. This includes prototype files, etc. Since we are linking rather than copying, any updates to our files in the cloned repository will be reflected in our setup down the road.</p>
+<div class="highlight"><pre><span></span><code>ln -s /home/pi/sidekick-epics/streamDevice/* ./
+</code></pre></div>
+<h4 id="configure-the-startup-script">Configure the startup script<a class="headerlink" href="#configure-the-startup-script" title="Permanent link">&para;</a></h4>
+<p>Edit a new <code>st.cmd</code> file.</p>
+<div class="highlight"><pre><span></span><code>nano st.cmd
+</code></pre></div>
+<p>And then fill the contents of this new file with:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">EPICS_BASE</span><span class="o">=</span>/home/pi/EPICS/epics-base
+<span class="nb">export</span> <span class="nv">EPICS_HOST_ARCH</span><span class="o">=</span><span class="k">$(</span><span class="si">${</span><span class="nv">EPICS_BASE</span><span class="si">}</span>/startup/EpicsHostArch<span class="k">)</span>
+<span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="si">${</span><span class="nv">EPICS_BASE</span><span class="si">}</span>/bin/<span class="si">${</span><span class="nv">EPICS_HOST_ARCH</span><span class="si">}</span>:<span class="si">${</span><span class="nv">PATH</span><span class="si">}</span>
+
+bash ./leds.cmd
+</code></pre></div>
+<p>Where the last line, <code>./leds.cmd</code>, is whatever startup script you want to run from the sidekick-epics files.</p>
+<p>Finally, make your <code>st.cmd</code> startup script executable.</p>
+<div class="highlight"><pre><span></span><code>chmod +x st.cmd
+</code></pre></div>
+<p>You can now test it before continuing:</p>
+<div class="highlight"><pre><span></span><code>./st.cmd
+</code></pre></div>
+<p>And then, before closing the process, open another terminal window and check that <code>caget</code> is working correctly.</p>
+<p>Finally, kill the process and open a new terminal window under the user <code>pi</code>.</p>
+<h4 id="install-the-ioc-with-manage-iocs">Install the IOC with manage-iocs<a class="headerlink" href="#install-the-ioc-with-manage-iocs" title="Permanent link">&para;</a></h4>
+<p>Finally, from another terminal window logged in as the <code>pi</code> user, install the IOC using <code>manage-iocs</code>.</p>
+<div class="highlight"><pre><span></span><code>manage-iocs report
+sudo manage-iocs install LEDs
+sudo manage-iocs start LEDs
+</code></pre></div>
+<p>When prompted about whether you want to start <code>LEDs</code> at boot, say yes. This will start the IOC automatically every time the pi boots up.</p>
+<p>If you want to restart the IOC or stop the IOC, here are two more useful commands:</p>
+<div class="highlight"><pre><span></span><code>sudo manage-iocs restart LEDs
+sudo manage-iocs stop LEDs
+</code></pre></div>
+<p>If you want to peer in at what's happening with the IOC, try
+<div class="highlight"><pre><span></span><code>telnet localhost 4050
+</code></pre></div></p>
+<p>where 4050 is the previously set port value.</p>
+<h3 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h3>
+<p>Congratulations! You should be able to manage your IOCs with <code>manage-iocs</code> commands and the IOC should now start up every time you boot the computer.</p>
+<p>You can adapt the above instructions for the other computers which will be running the other IOCs, like the shutter IOC and the pulse generator IOCs.</p>
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../pi-systemd-softioc-setup/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Install and Configure systemd-ioc" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Install and Configure systemd-ioc
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../about/" class="md-footer__link md-footer__link--next" aria-label="Next: About Us" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              About Us
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2022 <a href="http://www.scottfeister.com">Scott Feister</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6e54b5cd.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
