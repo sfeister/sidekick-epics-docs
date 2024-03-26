@@ -13,6 +13,8 @@ nav:
         - 'demos/OpenLoopBrightness.ipynb'
         - 'demos/OpenLoopHRR.ipynb'
         - 'demos/ClosedLoopBasics.ipynb'
+    - CS-Studio Demos:
+        - 'css-phoebus-install-windows.md'
     - Building A Sidekick System:
         - 'sidekick-source-components.md'
         - Configure Raspberry Pis:
