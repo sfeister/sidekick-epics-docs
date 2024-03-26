@@ -52,29 +52,29 @@ Download the zip file for Windows from [CS-Studio / Phoebus Download](https://co
 Unzip the contents into a temporary folder on your computer, which for me made a folder called "phoebus-4.7.3-SNAPSHOT". Make note of the CS-Studio (Phoebus) version number - mine was 4.7.3.
 
 Create a new folder in C:\Program Files called "CSS Phoebus 4.7.3".
-<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/f1750213-6908-427e-8f69-58459fcab785.png" width=50% height=50% />
+<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/f1750213-6908-427e-8f69-58459fcab785" width=50% height=50% />
 
 Cut and paste the full contents of the file folder "phoebus-4.7.3-SNAPSHOT" into this new folder ("C:\Program Files\CSS Phoebus 4.7.3").
-<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/99a5661c-7b2f-40fc-8431-b5c368f706ab.png" width=50% height=50% />
+<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/99a5661c-7b2f-40fc-8431-b5c368f706ab" width=50% height=50% />
 
 #### Create Desktop and Start Menu shortcuts
 Since we managed our own installation of the zip file contents, we're also on the hook for setting up our Desktop and Start Menu shortcuts.
 
 Right click "phoebus.bat" and create a shortcut for it on your desktop.
-<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/8a90b012-e908-4876-aa4e-0bd3f3f50e2d.png" width=50% height=50% />
+<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/8a90b012-e908-4876-aa4e-0bd3f3f50e2d" width=50% height=50% />
 
 On your desktop, rename the shortcut to "CS-Studio (Phoebus) 4.7.3"
-<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/8a631d9c-caad-4b73-baa2-c3ee78370745.png" width=25% height=25% />
+<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/8a631d9c-caad-4b73-baa2-c3ee78370745" width=25% height=25% />
 
 Do Ctrl + R (Run) and then enter "%AppData%\Microsoft\Windows\Start Menu\Programs". This will open up a folder for you relating to your Start Menu applications.
-<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/1707ec51-c6a5-420f-9c4d-89a88ea80eec.png" width=50% height=50% />
+<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/1707ec51-c6a5-420f-9c4d-89a88ea80eec" width=50% height=50% />
 
 Copy your desktop shortcut into that folder. This will put it into the Start Menu list.
-<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/676facc7-b9d7-4f4a-8e66-6b88f4c58ed4.png" width=50% height=50% />
+<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/676facc7-b9d7-4f4a-8e66-6b88f4c58ed4" width=50% height=50% />
 
 ### Check everything works!
 
 You can now start CS-Studio from the start menu.
-<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/112dfb31-dd83-4ea4-9c1b-42a3986cc5f6.png" width=25% height=25% />
+<br /><img src="https://github.com/sfeister/sidekick-epics-docs/assets/7269185/112dfb31-dd83-4ea4-9c1b-42a3986cc5f6" width=25% height=25% />
 
 			
