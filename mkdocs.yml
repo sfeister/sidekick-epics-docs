@@ -28,6 +28,8 @@ nav:
         - 'model3/model3-architecture.md'
         - 'model3/model3-hardware-triggers.md'
         - 'model3/model3-pv-list.md'
+    - Control Panel Demos:
+        - 'css-phoebus-install-windows.md'
 #    - Getting Set Up for EPICS in Python:
 #        - 'epics_message_single_computer.md'
     - 'about.md'
