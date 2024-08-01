@@ -5,11 +5,16 @@ authors:
     - Scott Feister
 ---
 
-# Architecture of the Sidekick System
+# Architecture of Sidekick Model 1
 
+Sidekick Model 1 is designed to be inexpensive, easy to understand, and easy to build. It incorporates a motorized element. It's a great way to get your first experience with EPICS.
 
-## Elements of the Sidekick System
-Our "sidekick system" EPICS demo consists of:
+![Model 1 Architecture Diagram](https://github.com/user-attachments/assets/51731de8-b3de-48f3-980d-987cfd2d19bf)
+
+![Model 1 Annotated Photo](https://github.com/user-attachments/assets/33b43172-3fe0-41c9-9630-338e26a16ea6)
+
+## Elements of the Sidekick Model 1
+The Sidekick Model 1 demo consists of:
 
 * Light source (six LEDs)
 * Optical detector (a phototransistor)
