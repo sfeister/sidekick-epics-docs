@@ -28,6 +28,7 @@ nav:
         - 'model3/model3-ioc-administration.md'
         - Building from Scratch:
             - Source Code/CAD: 'model3/model3-source-components.md'
+            - 'model3/model3-flash-teensy.md'
     - Clients:
         - Python Client: 'epics_on_windows_via_anaconda.md'
         - Graphical Client: 'css-phoebus-install-windows.md'

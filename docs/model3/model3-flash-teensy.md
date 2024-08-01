@@ -1,8 +1,24 @@
-# Flashing Firmware to Teensy
+---
+layout: default
+title: Flashing Teensy Firmware
+authors:
+    - Scott Feister
+---
+
+# Flashing Sidekick Firmware to the Teensy Development Boards
 
 We are using [Teensy 4.0 or Teensy 4.1 development boards](https://www.pjrc.com/teensy/index.html) to mimic real laboratory devices. This requires flashing our custom firmware onto these development boards.
 
 You can flash firmware to the Teensys from Windows, Linux, Mac etc. The process is pretty similar to flashing firmware to an Arduino. I’ll walk through here how to flash this specific firmware to a Teensy 4.0 from Windows.
+
+## Download Sidekick v3 Firmware Source Code
+
+From within the [dolphindaq repository on GitHub](https://github.com/sfeister/dolphindaq), you’ll need the entire folder called “Teensy”, as this contains the source code for all the Sidekick v3 firmwares. You will also need the subfolder "proto". Use [git on Windows](https://git-scm.com/download/win) or equivalent to clone the entire dolphindaq repository to a local folder on your computer.
+
+```bash
+git clone https://github.com/sfeister/dolphindaq.git
+```
+
 
 ## Download and install TeensyLoader
 
@@ -69,14 +85,6 @@ Copy the folders “ddaqproto” and “ADC” to the following libraries folder
 2. macOS: /Users/{username}/Documents/Arduino/libraries
 3. Linux: /home/{username}/Arduino/libraries
 
-## Download Sidekick v3 Firmware Source Code
-
-From within the [dolphindaq repository on GitHub](https://github.com/sfeister/dolphindaq), you’ll need the entire folder called “Teensy”, as this contains the source code for all the Sidekick v3 firmwares.Use [git on Windows](https://git-scm.com/download/win) or equivalent to clone.
-
-```bash
-git clone https://github.com/sfeister/dolphindaq.git
-```
-
 ## Compile Firmware for PulseGenerator
 
 We’ll start off by compiling and flashing the firmware that will run the system pulse generator in the Sidekick v3.
@@ -116,7 +124,7 @@ A successful compile will take a few minutes and then end with a message such as
 ![Successful Compile Output](https://github.com/user-attachments/assets/19d92129-96f1-433c-9b10-7f5d61b4b1e3)
 
 ## Flash Firmware for PulseGenerator
-If you want to flash the firmwware, instead of just "Verify", select "Run."
+When you are ready to flash the firmware instead of just verifying the compile, select "Run" in the Arduino IDE.
 
-## Compile your other sketches
-You should now have the compiling toolchain set up to work with any firmware for the Sidekick Model 3.
+## Compile and Flash Other Sketches
+You should now have the toolchain to compile and flash any firmware for the Sidekick Model 3.
