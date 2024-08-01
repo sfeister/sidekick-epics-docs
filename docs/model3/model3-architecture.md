@@ -9,7 +9,7 @@ authors:
 
 Sidekick Model 3 is designed to be high-performance and **high-repetition-rate** (0.1 Hz to kHz). It is currently the most advanced sidekick system.
  
-The mock embedded devices are built from Teensy 4.0 microcontrollers to leverage their high performance (Cortex 32-bit microcontroller with 600 MHz clock speed). The computer controllers incorporate EPICS Channel Access protocol for controls, and EPICS PVAccess protocol for structured data acquisition.
+The mock embedded devices are built from [Teensy 4.0](https://www.pjrc.com/store/teensy40.html) development boards to leverage their high performance (ARM Cortex-M7 at 600 MHz) and a strong user community. The computer controllers incorporate EPICS Channel Access protocol for controls, and EPICS PVAccess protocol for structured data acquisition.
 
 The system allows for variable laser temporal pulse shaping and synthetic diagnostics with high-data-rate, timestamped data. It is designed to help with development of high-repetition-rate data pipelines.
 

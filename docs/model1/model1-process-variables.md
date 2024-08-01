@@ -1,12 +1,14 @@
 ---
 layout: default
-title: Command Lists
+title: Process Variables
 authors:
     - Emiko Ito
+    - Scott Feister
 ---
 
 
-# Command Lists
+# Process Variables for Sidekick Model 1
+
 ## LEDS
 | command                   | description                                                                          |
 | ------------------------- | ------------------------------------------------------------------------------------ |

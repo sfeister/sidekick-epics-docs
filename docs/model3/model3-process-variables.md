@@ -5,7 +5,7 @@ authors:
     - Scott Feister
 ---
 
-# Process Variables
+# Process Variables for Sidekick Model 3
 
 ## Pulse Generator
 

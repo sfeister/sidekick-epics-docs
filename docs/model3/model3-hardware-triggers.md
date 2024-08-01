@@ -1,9 +1,11 @@
 ---
 layout: default
-title: Hardware Triggers
+title: Hardware Trigger Details
 authors:
     - Scott Feister
 ---
+
+# Hardware Timing Connections and Tolerances for Model 3
 
 The hardware triggers are a 3V 10-microsecond TTL active-high signal sent via BNC cables from the pulse generator to the other devices.
 

@@ -4,36 +4,37 @@ nav:
     - 'sidekick-overview.md'
     - 'sidekick-motivation.md'
     - 'sidekick-analogies.md'
-    - General Setup:
-        - Python Client Setup: 'epics_on_windows_via_anaconda.md'
-        - Control Panel Setup: 'css-phoebus-install-windows.md'    
     - Model 1:
         - 'model1/model1-architecture.md'
-        - 'model1/model1-command-list.md'
-        - 'model1/model1-source-components.md'
-        - Configure Raspberry Pis:
+        - 'model1/model1-process-variables.md'
+        - Client Demos (Python):
+            - 'model1/demos/HelloSidekick.ipynb'
+            - 'model1/demos/OpenLoop.ipynb'
+            - 'model1/demos/OpenLoopBrightness.ipynb'
+            - 'model1/demos/OpenLoopHRR.ipynb'
+            - 'model1/demos/ClosedLoopBasics.ipynb'
+        - Building from Scratch:
+            - Source Code/CAD: 'model1/model1-source-components.md'
             - Flash Your Raspberry Pi: 'model1/pi-flash.md'
             - First Boot: 'model1/pi-first-boot.md'
             - Install EPICS v7: 'model1/pi-epics-install.md'
             - Install StreamDevice: 'model1/pi-stream-device-install.md'
             - Install and Configure systemd-ioc: 'model1/pi-systemd-softioc-setup.md'
             - 'model1/pi-systemd-softioc-sidekick.md'
-        - Python Demos:
-            - 'model1/demos/HelloSidekick.ipynb'
-            - 'model1/demos/OpenLoop.ipynb'
-            - 'model1/demos/OpenLoopBrightness.ipynb'
-            - 'model1/demos/OpenLoopHRR.ipynb'
-            - 'model1/demos/ClosedLoopBasics.ipynb'
     - Model 3:
         - 'model3/model3-architecture.md'
+        - 'model3/model3-process-variables.md'
         - 'model3/model3-hardware-triggers.md'
-        - 'model3/model3-pv-list.md'
-    - Control Panel Demos:
-        - 'css-phoebus-install-windows.md'
-#    - Getting Set Up for EPICS in Python:
-#        - 'epics_message_single_computer.md'
+        - 'model3/model3-ioc-administration.md'
+        - Building from Scratch:
+            - Source Code/CAD: 'model3/model3-source-components.md'
+    - Clients:
+        - Python Client: 'epics_on_windows_via_anaconda.md'
+        - Graphical Client: 'css-phoebus-install-windows.md'
     - 'about.md'
     
+#    - Getting Set Up for EPICS in Python:
+#        - 'epics_message_single_computer.md'
 
 plugins:
     - mkdocs-jupyter # https://github.com/danielfrg/mkdocs-jupyter
