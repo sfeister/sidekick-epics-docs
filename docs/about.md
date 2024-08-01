@@ -26,9 +26,10 @@ Many scientists and staff at LLNL have contributed to this project. Here are som
 | Abhik Sarkar | 2020-present | EPICS, undergraduate mentorship, DAQ pipelines & ML algorithms | |
 | Derek Mariscal | 2020-present | Facility and science expertise, DAQ pipelines, undergraduate mentorship, & ML algorithms | |
 | Brian Spears | 2020-present | Team leadership, science and ML applications expertise, promotion and dissemination | |
-| Timo Peer-Bremer | 2020-present | Team leadership, undergraduate mentorship, & ML algorithms | |
-| Tammy Ma | 2020-present|initiated our CSUCI-LLNL collaboration! | |
+| Timo Bremer | 2020-present | Team leadership, undergraduate mentorship, & ML algorithms | |
+| Brian Van Essen | 2020-present | ML algorithms | |
 | Aldair Gongora | 202x-present | ML algorithms | |
+| Tammy Ma | 2020-present|initiated our CSUCI-LLNL collaboration! | |
 | Mason Sage | 2023-present | 3D CAD and physical hardware for Sidekick Model 4 | |
 
 Below (left-to-right): Founding undergraduates Keily Valdez Sereno and Emiko Ito, with their faculty mentor Scott Feister, at Sierra Hall of California State University Channel Islands. (2021)
