@@ -13,10 +13,14 @@ This project was initiated at CSUCI as a testbed on which we could learn EPICS, 
 
 | Name | Period of Engagement | Role | |
 | :---------------- | :------: | ----: | ----: |
-| Scott Feister | 2020-present | Full-stack design and execution, facility expertise, undergraduate mentorship | | 
-| Keily Valdez Sereno | 2020-2023| 3D CAD and physical hardware for Sidekick Models 1 & 2, interdisciplinary creative sparks, EPICS, documentation, systems thinking | founding undergraduate! | 
-| Emiko Ito | 2020-2023 | 3D CAD and physical hardware for Sidekick Models 1 & 2, interdisciplinary creative sparks, EPICS, documentation, systems thinking | founding undergraduate! | 
-| Maximilian Seligman | 2023-present | 3D CAD and physical hardware for for Sidekick Model 3 | | 
+| Scott Feister | 2020-present | Full-stack design and execution, facility expertise, undergraduate mentorship | PI / Faculty | 
+| Keily Valdez Sereno | 2020-2023| 3D CAD and physical hardware for Sidekick Models 1 & 2, interdisciplinary creative sparks, EPICS, documentation, systems thinking | Founding Undergraduate! (Mechatronics Major) | 
+| Emiko Ito | 2020-2023 | 3D CAD and physical hardware for Sidekick Models 1 & 2, interdisciplinary creative sparks, EPICS, documentation, systems thinking | Founding Undergraduate! (Mechatronics Major) | 
+| Maximilian Seligman | 2023-2024 | 3D CAD and physical hardware for for Sidekick Model 3 | Staff Technician | 
+| Elias Dandouch | 2024-present | Improving documentation, exploring motor driver software | Undergraduate (CS Major) | 
+| Carlos Enriquez | 2024-2025 | Exploring motor driver software, 3D CAD for tiny motorized linear stage | Undergraduate (Mechatronics Major) | 
+| Adam Black | 2025-present | 3D CAD enclosure for 2.4" "Faux Scintillator" Display | Undergraduate (Mechatronics Major) | 
+| Haley Anglin | 2025-present | 3D CAD enclosure for 2.4" "Faux Scintillator" Display | Undergraduate (Mechatronics Major) | 
 
 ### Lawrence Livermore National Laboratory (LLNL)
 Many scientists and staff at LLNL have contributed to this project. Here are some key contributors:
@@ -30,7 +34,7 @@ Many scientists and staff at LLNL have contributed to this project. Here are som
 | Brian Van Essen | 2020-present | ML algorithms | |
 | Aldair Gongora | 202x-present | ML algorithms | |
 | Tammy Ma | 2020-present|initiated our CSUCI-LLNL collaboration! | |
-| Mason Sage | 2023-present | 3D CAD and physical hardware for Sidekick Model 4 | |
+| Mason Sage | 2023-2024 | 3D CAD and physical hardware for Sidekick Model 4 | |
 
 Below (left-to-right): Founding undergraduates Keily Valdez Sereno and Emiko Ito, with their faculty mentor Scott Feister, at Sierra Hall of California State University Channel Islands. (2021)
 ![Sidekick Group Photo Small](https://user-images.githubusercontent.com/7269185/156228192-bc763eeb-fdaa-4bef-9641-b6332181b026.JPG)

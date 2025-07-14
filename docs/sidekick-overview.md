@@ -7,6 +7,8 @@ authors:
 
 # Overview of the Sidekick Facilities
 
+![type:video](https://www.youtube.com/embed/vhmGJNwWx2M?si=QOIFiL8D_Hzptp6m&cc_load_policy=1)
+
 "Sidekick Facilities" are tabletop mockups of laboratory control and data systems. These testbeds are used by researchers exploring the challenges of closed-loop control systems for real-world intense laser experiments.
 
 ![Sidekick Broad View Small](https://user-images.githubusercontent.com/7269185/156228045-ae113b35-8891-4ca8-96da-a0b1969d2df6.JPG)
