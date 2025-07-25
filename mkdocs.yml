@@ -5,22 +5,30 @@ nav:
     - 'sidekick-motivation.md'
     - 'sidekick-analogies.md'
     - Model 1:
-        - 'model1/model1-architecture.md'
         - 'model1/model1-process-variables.md'
-        - Client Demos (Python):
+        - A.) Getting Started:
+            - 'model1/getting-started/1-requirements-and-overview.md'
+            - 'model1/getting-started/2-hardware-ethernet-setup.md'
+            - 'model1/getting-started/3-wifi-configuration.md'
+            - 'model1/getting-started/4-ssh-and-flashing.md'
+        - B.) Running Simple IOC:
+            - Install EPICS v7: 'model1/simple-ioc/pi-epics-install.md'
+            - Build & Run Hello World IOC: 'model1/simple-ioc/build-run-simple-ioc'
+        - C.) Arduino Set-Up:
+            - Flash Arduino with SCPI Firmware: 'model1/arduino-set-up/flash-arduino.md'
+            - Serial Port Communication: 'model1/arduino-set-up/serial-port-communication.md' 
+        - D.) Building Sidekick Model 1: 'model1/model1-architecture.md'
+        - E.) Building Sidekick EPICS IOCs:
+            - Source Code/CAD: 'model1/model1-source-components.md'
+            - Install StreamDevice: 'model1/pi-stream-device-install.md'
+            - Install and Configure systemd-ioc: 'model1/pi-systemd-softioc-setup.md'
+            - 'model1/pi-systemd-softioc-sidekick.md'
+        - F.) Client Demos (Python):
             - 'model1/demos/HelloSidekick.ipynb'
             - 'model1/demos/OpenLoop.ipynb'
             - 'model1/demos/OpenLoopBrightness.ipynb'
             - 'model1/demos/OpenLoopHRR.ipynb'
             - 'model1/demos/ClosedLoopBasics.ipynb'
-        - Building from Scratch:
-            - Source Code/CAD: 'model1/model1-source-components.md'
-            - Flash Your Raspberry Pi: 'model1/pi-flash.md'
-            - First Boot: 'model1/pi-first-boot.md'
-            - Install EPICS v7: 'model1/pi-epics-install.md'
-            - Install StreamDevice: 'model1/pi-stream-device-install.md'
-            - Install and Configure systemd-ioc: 'model1/pi-systemd-softioc-setup.md'
-            - 'model1/pi-systemd-softioc-sidekick.md'
     - Model 3:
         - 'model3/model3-architecture.md'
         - 'model3/model3-process-variables.md'
