@@ -116,4 +116,9 @@ The variables aren't yet updated in your system. You have two options to load th
 You can now build local EPICS databases and use commands like "softIoc" and "caget"! Tinker around with these commands for a little while by following the online tutorial ["Test EPICS"](https://docs.epics-controls.org/projects/how-tos/en/latest/getting-started/installation.html#test-epics).
 
 ## What's Next?
-When you're ready to set up a real device that communicates via USB Serial commands, such as the Arduino setups we've created for the Sidekick System, move along to the next step here! The next step will guide you through installing the EPICS *asyn* and *streamDevice* modules!
+
+Now that EPICS v7 is installed, let's test it by creating your first IOC:
+
+**Next tutorial:** [Create and Run a Simple EPICS IOC](../simple-ioc/build-run-simple-ioc.md) - Build and test a basic IOC to verify your EPICS installation
+
+After confirming your IOC works, you'll be ready to integrate hardware devices and build more complex distributed systems.
