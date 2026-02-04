@@ -9,11 +9,21 @@ authors:
 
 ## Tools and Equipment
 
-You will need the following equipment:
+You will need the following tools and equipment to manufacture a Sidekick Model 3 (Bookshelf Form-Factor):
 
 * Laser cutter
 
 * 3D printer
+
+* Laptop/Computer (for flashing firmware to Teensy microcontrollers, and flashing SD cards for Beaglebones)
+
+* (Optional) Soldering iron or heat gun to apply heatshrink
+
+* (Optional) Voltmeter while troubleshooting
+
+* (Optional) 3V Power Supply while troubleshooting
+
+* (Optional) Oscilloscope while troubleshooting
 
 All other required tools are inexpensive, and are listed in the bill of materials.
 

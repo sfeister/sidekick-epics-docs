@@ -55,11 +55,11 @@ Press fit together all the laser cut parts, to create the overall enclosure.
   
 1. Get a small board (smaller than any bookshelf level) and place all assembled photodetectors and lasers atop of it.
 
-1. Temporarily power the lasers using a 3V power source, and examine the detector output using an voltmeter.
+1. Temporarily power the lasers using a 3V power source, and examine the detector output using a voltmeter.
 
 1. Using your voltmeter as feedback of alignment, use super glue to align and super glue the lasers and photodiodes, onto the small board.
 
-1. Disconnect your power supply and voltmeter. Move your assembled small board onto the Physics/Interaction level. This level is now complete.
+1. Disconnect your power supply and voltmeter. Move your assembled small board onto the Physics/Interaction level. The Physics/Interaction Level is now complete.
 
 ### Build the Device Level
 
@@ -83,6 +83,8 @@ Press fit together all the laser cut parts, to create the overall enclosure.
 
 1. Connect each Teensy to the correct USB hub.
 
+1. Shove the Beaglebones into the Computer Level, and shove the USB hubs into the dedicated level above.
+
 1. The Computer Level is now complete.
 
 ### Build the Networking Level
@@ -92,6 +94,8 @@ Press fit together all the laser cut parts, to create the overall enclosure.
 1. Connect the Beaglebones to the Network switch (using 1.5 ft ethernet cables).
 
 1. Add one more spare Ethernet cable dangling out from the networking switch. You'll use that later to connect your laptop or a gateway device.
+
+1. Shove the Network switch into the Networking Level.
 
 1. The Networking Level is now complete.
 
@@ -103,7 +107,9 @@ Press fit together all the laser cut parts, to create the overall enclosure.
 
 1. Power the Network switch from the USB power bank (using the USB-to-12V barrel adapter).
 
-1. Dangle the USB power bank's main power plug out of the enclosure.
+1. Shove the USB power bank into the Power Level.
+
+1. Dangle bank's sole wall-power wire out of the enclosure.
 
 1. The Power Level is now complete.
 
