@@ -82,7 +82,7 @@ apt search readline-common
 What I found installed was readline version 7.0-5 at time of writing this tutorial.
     
 ### Download and install EPICS v7 (30 minutes)
-This portion of our instructions are copied nearly directly from the [EPICS 7 getting started guide](https://docs.epics-controls.org/projects/how-tos/en/latest/getting-started/installation.html).
+This portion of our instructions are copied nearly directly from the [Getting started with EPICS](https://epics-controls.org/resources-and-support/documents/getting-started/).
 
 #### Download and install
 Create an EPICS folder, download the latest repository code, and compile EPICS base from source:
@@ -94,6 +94,8 @@ git clone --recursive https://github.com/epics-base/epics-base.git
 cd epics-base
 make -j8
 ```
+
+The last step, `make -j8`, can take from ten minutes to a half hour, depending on your hardware.
 
 (Note: the `make -j8` means to compile EPICS using eight threads, to speed up this step on a multicore machine. A more bulletproof method is to just run `make`, which uses one thread, and may take longer.)
 
@@ -112,8 +114,8 @@ The variables aren't yet updated in your system. You have two options to load th
 1. Option 1: Close the SSH window, and then SSH back into your Pi a second time.
 2. Option 2: Run the command `source ~/.bashrc` and skip closing/re-opening your SSH window.
 
-### Step back and tinker!
-You can now build local EPICS databases and use commands like "softIoc" and "caget"! Tinker around with these commands for a little while by following the online tutorial ["Test EPICS"](https://docs.epics-controls.org/projects/how-tos/en/latest/getting-started/installation.html#test-epics).
+### (Optional) Step back and tinker!
+You can now build local EPICS databases and use commands like "softIoc" and "caget"! Tinker around with these commands for a little while by following the online tutorial ["Test EPICS"](https://epics-controls.org/resources-and-support/documents/getting-started/#4_Test_EPICS).
 
 ## What's Next?
 
