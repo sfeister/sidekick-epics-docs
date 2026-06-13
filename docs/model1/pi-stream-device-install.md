@@ -27,31 +27,9 @@ Follow the prior instructions to SSH into your Raspberry Pi from your Laptop / C
 
 ##### Install PCRE packages
 
+I'm not actually completely sure this step is still necessary, but:
 ```bash
-sudo apt install -y libpcre3 libpcre3-dev
-```
-
-Note: libpcre3 (runtime files) is probably already installed, but libpcre3-dev (include files, etc) is probably not.
-
-###### (Optional) Verify PCRE installation
-Check that `/usr/include/` now contains header files for PCRE, such as `pcre.h`, and that `/usr/lib/x86_64-linux-gnu/` now contains files such as `libpcre.so`. You can do this in at least two ways:
-
-###### (Optional) Option A for verification: Go check out package details for libpcre3 and libpcre3-dev and see where items went
-
-See the official Debian references online for package lists, then go to "list files" under your architecture.
-
-###### (Optional) Option B for verification: Call these two commands:
-
-Call `whereis pcre`. This returns for my system: 
-
-```bash
-pcre: /usr/include/pcre.h /usr/share/man/man3/pcre.3.gz
-```
-
-Then, call `whereis libpcre`. This returns for my system:
-
-```bash
-libpcre: /usr/lib/arm-linux-gnueabihf/libpcre.a /usr/lib/arm-linux-gnueabihf/libpcre32.so /usr/lib/arm-linux-gnueabihf/libpcre.so /usr/lib/arm-linux-gnueabihf/libpcre32.a /usr/lib/arm-linux-gnueabihf/libpcre16.a /usr/lib/arm-linux-gnueabihf/libpcre16.so
+sudo apt install -y libpcre2-dev
 ```
 
 ### Compile and install asyn
@@ -182,19 +160,4 @@ Above, we have edited the `configure/RELEASE` file such that:
 
 1. Set the EPICS_BASE variable to point to the right folder for your computer (SUPPORT is already set up OK)
 
-Next, edit the architecture-specific RELEASE file `configure/RELEASE.Common.${EPICS_HOST_ARCH}` for StreamDevice, so that it locates the pcre libraries you installed earlier:
-
-```bash
-nano configure/RELEASE.Common.${EPICS_HOST_ARCH}
-```
-
-(This will create a new file to edit)
-
-Based on examining the outputs of `whereis pcre` and `whereis libpcre` (see the earlier step where we were installing the PCRE dependency), add the following to `configure/RELEASE.Common.${EPICS_HOST_ARCH}` that match the path prefixes for our system:
-
-```bash
-PCRE_INCLUDE=/usr/include
-PCRE_LIB=/usr/lib
-```
-        
-Save the new file, then run `make` (or `make -j8` for faster results).
+After saving that file, run `make` (or `make -j8` for faster results).
