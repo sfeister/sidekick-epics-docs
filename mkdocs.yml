@@ -5,6 +5,7 @@ nav:
     - 'sidekick-motivation.md'
     - 'sidekick-analogies.md'
     - Model 1:
+        - 'model1/model1-architecture.md'
         - 'model1/model1-process-variables.md'
         - Getting Started:
             - 'model1/getting-started/1-requirements-and-overview.md'
@@ -17,7 +18,6 @@ nav:
         - Flashing Arduinos:
             - Flash Arduino with SCPI Firmware: 'model1/arduino-set-up/flash-arduino.md'
             - Serial Port Communication: 'model1/arduino-set-up/serial-port-communication.md' 
-        - Physical System Layout: 'model1/model1-architecture.md'
         - Installing Sidekick EPICS IOCs to Pis:
             - Install StreamDevice: 'model1/pi-stream-device-install.md'
             - Install and Configure systemd-ioc: 'model1/pi-systemd-softioc-setup.md'
